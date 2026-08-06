@@ -285,6 +285,9 @@ section:nth-child(even) .divider::after {
   text-align: right;
   color: var(--gold-dark);
 }
+.print-full-width {
+  grid-column: 1 / -1;
+}
 
 /* FAQ Acordeão Simplificado (Visual) */
 .faq-item {
