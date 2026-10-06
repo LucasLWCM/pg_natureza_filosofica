@@ -1,574 +1,1366 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Escola Natureza Filosófica | A chave para se apaixonar pela vida</title>
-    <link rel="stylesheet" href="style.css">
-    <meta name="description" content="A chave para se apaixonar pela vida e se sentir vivo todos os dias. Saia da vida administrada com a Escola Natureza Filosófica.">
+    <title>Escola Natureza Filosófica</title>
+
+    <!-- Preconnect do Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Fontes: Oswald (500, 600, 700) e Montserrat (400, 500, 600, 600i, 700) -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,600&family=Oswald:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS Principal -->
+    <link rel="stylesheet" href="./oficial/style.css">
+
+    <!-- SEO FAQ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Nunca estudei filosofia. Consigo acompanhar?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Consegue. A escola foi montada para quem começa do zero, sem livro difícil e sem palavra complicada. Eu explico com exemplos do dia a dia, e você pode perguntar na hora, ao vivo."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Como funcionam as aulas ao vivo?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Toda semana eu entro ao vivo com a turma, na terça ou na quarta à noite. Você pergunta, conta o que está vivendo e leva a filosofia para a sua semana. O horário é ajustado ao que ficar melhor para a turma."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "E se eu não puder assistir ao vivo?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Todos os encontros ficam gravados, e você assiste no seu tempo. Ninguém fica de fora por causa de horário: a gente marca reposição e ajusta o dia conforme a turma. O caderno de prática você faz quando quiser, sem prazo correndo atrás de você."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Como recebo o acesso e quando começo?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Começa imediatamente. Assim que a compra for aprovada, você recebe o acesso por e-mail, com o mesmo e-mail da compra, e o link do grupo da Ágora no WhatsApp. Você já entra com o conteúdo liberado e participa da próxima aula ao vivo."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Por quanto tempo terei acesso?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Você terá um ano completo de acesso a todo o conteúdo. Nesse período, as séries que eu lançar entram para você sem custo nenhum."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Como funciona o valor de membro fundador?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Os 100 primeiros entram com o valor de lançamento: 12x de R$59,70 ou R$597 à vista. Quando a turma chegar em 100, o valor sobe."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "E se eu entrar e não for para mim?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Você tem duas garantias. A primeira é de 15 dias: entre, participe dos encontros e, se não gostar, peça o reembolso, sem precisar justificar nada. A segunda é de 1 ano: se você assistir a todo o conteúdo e participar de todas as aulas ao vivo e, mesmo assim, sentir que não agregou nada na sua vida, eu devolvo cada centavo."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "O Benedito e o Marquito são pessoas de verdade?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Não. São inteligências artificiais, disponíveis a qualquer hora. O Benedito é treinado com todo o meu conteúdo. O Marquito é treinado com o conteúdo de Marco Aurélio, para você conversar com as ideias dele."
+          }
+        }
+      ]
+    }
+    </script>
 </head>
+
 <body>
+    <!-- O ruído pode ser global para as seções escuras, mas vamos adicionar por seção conforme o design -->
 
-    
+    <!-- ==============================================
+         1. HERO SECTION
+         ============================================== -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <picture>
+                <source media="(prefers-reduced-motion: reduce)" srcset="hero-estatico.webp">
+                <img src="./oficial/hero-loop.webp" alt="" width="720" height="1280" fetchpriority="high" decoding="async"
+                    class="hero-gif">
+            </picture>
+            <div class="hero-overlay"></div>
+            <div class="ruido"></div>
+        </div>
 
-    <!-- 1. TOPO -->
-    <section id="topo">
-        <div class="container text-center">
-            <h1>A chave para se apaixonar pela vida e se sentir vivo todos os dias</h1>
-            <p>Você sustenta trabalho, casa e família há anos. O problema nunca foi a sua força. Foi o dever ter ocupado o lugar do querer, até o descanso virar tarefa.</p>
-            
-            <div class="video-wrapper">
-                <iframe src="https://www.youtube.com/embed/BQlgzeznAaA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <img src="./oficial/logo.webp" alt="Escola Natureza Filosófica" class="hero-logo anima-sequencia"
+                    style="--delay: 0">
+
+                <div class="prova-rostos anima-sequencia" style="--delay: 1">
+                    <div class="rostos">
+                        <img src="./oficial/face1.webp" alt="Aluno 1" width="40" height="40">
+                        <img src="./oficial/face2.webp" alt="Aluno 2" width="40" height="40">
+                        <img src="./oficial/face3.webp" alt="Aluno 3" width="40" height="40">
+                        <img src="./oficial/face4.webp" alt="Aluno 4" width="40" height="40">
+                    </div>
+                    <p>+80 mil pessoas impactadas</p>
+                </div>
+
+                <h1 class="anima-sequencia" style="--delay: 2">A chave para se apaixonar pela vida e <em>se sentir vivo
+                        todos os dias</em></h1>
+
+                <p class="hero-subtitulo anima-sequencia" style="--delay: 3">Aprenda a transformar a filosofia em uma
+                    ferramenta prática para superar o vazio, o cansaço e a sensação de viver no automático.</p>
+
+                <a href="#oferta" class="btn-principal anima-sequencia" style="--delay: 4">
+                    Quero conhecer a escola
+                    <span class="btn-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </span>
+                </a>
+
+                <p class="microtexto anima-sequencia" style="--delay: 5">12x de R$ 69,00 <span class="divisor">|</span>
+                    Início imediato <span class="divisor">
+            </div>
+        </div>
+    </section>
+
+    <!-- ==============================================
+         2. O PROBLEMA SECTION
+         ============================================== -->
+    <section class="secao-clara sobrepor-anterior problema-sec" id="problema">
+        <div class="ruido" style="opacity: 0.05; z-index: 0;"></div>
+        <div class="container problema-container" style="position: relative; z-index: 1;">
+
+            <div class="problema-header">
+                <h2 class="anim-texto problema-h2">Você dá conta de tudo. E termina o dia sentindo que <em>só
+                        funcionou.</em></h2>
+
+                <div class="problema-texto">
+                    <p class="anim-texto p-problema">O trabalho anda, a casa anda, as contas estão pagas. Mas por dentro
+                        tem um vazio que você não consegue explicar.</p>
+                    <p class="anim-texto p-problema-forte">Então você tenta resolver :</p>
+                </div>
             </div>
 
-            <div class="btn-cta-wrapper">
-                <a href="https://pay.hotmart.com/E106651725U?off=x8sw7f6b" class="btn-cta">Quero conhecer a escola</a>
-                <span class="btn-subtitle">12x de R$59,70 | Início imediato | Garantia dupla</span>
+            <div class="carrosel-wrapper">
+                <div class="carrosel-track" id="problema-track" role="region" aria-roledescription="carrossel"
+                    aria-label="Coisas que você já tentou">
+                    <!-- Card 1 -->
+                    <div class="card-tentativa" aria-label="1 de 4">
+                        <svg class="card-icon" xmlns="http://www.w3.org/2000/svg" width="36" height="36"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                            <path d="m9 16 2 2 4-4"></path>
+                        </svg>
+                        <h3 class="card-titulo">Organizando melhor a rotina</h3>
+                        <span class="card-tag">Rotina</span>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="card-tentativa" aria-label="2 de 4">
+                        <svg class="card-icon" xmlns="http://www.w3.org/2000/svg" width="36" height="36"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <circle cx="12" cy="12" r="6"></circle>
+                            <circle cx="12" cy="12" r="2"></circle>
+                        </svg>
+                        <h3 class="card-titulo">Se cobrando mais disciplina e mais gratidão</h3>
+                        <span class="card-tag">Cobrança</span>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="card-tentativa" aria-label="3 de 4">
+                        <svg class="card-icon" xmlns="http://www.w3.org/2000/svg" width="36" height="36"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M22 12a10.06 10.06 0 0 0-20 0Z"></path>
+                            <path d="M12 12v8a2 2 0 0 0 4 0"></path>
+                            <path d="M12 2v1"></path>
+                        </svg>
+                        <h3 class="card-titulo">Tirando uns dias de folga e voltando exatamente igual</h3>
+                        <span class="card-tag">Descanso</span>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="card-tentativa" aria-label="4 de 4">
+                        <svg class="card-icon" xmlns="http://www.w3.org/2000/svg" width="36" height="36"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                            <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                        </svg>
+                        <h3 class="card-titulo">Começando um hobby novo ou lotando o celular de conteúdo inspirador</h3>
+                        <span class="card-tag">Distração</span>
+                    </div>
+                </div>
+
+                <div class="carrosel-setas">
+                    <button aria-label="Card anterior" class="btn-seta prev-seta">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="19" y1="12" x2="5" y2="12"></line>
+                            <polyline points="12 19 5 12 12 5"></polyline>
+                        </svg>
+                    </button>
+                    <button aria-label="Próximo card" class="btn-seta next-seta">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </button>
+                </div>
             </div>
 
-            <div class="social-proof-grid" style="grid-template-columns: 1fr; max-width: 500px; margin: 0 auto;">
-                <div class="print-mockup">
-                    "Mudou completamente minha forma de encarar a segunda-feira. Eu não 'tenho que' trabalhar, eu escolho construir."
-                    <div class="print-author">- Aluno da Turma Pioneira</div>
+            <div class="problema-fechamento">
+                <h3 class="anim-texto problema-h3">Mas nada disso funcionou de verdade por muito tempo.</h3>
+            </div>
+
+            <div class="divisor-bloco-dourado"></div>
+
+        </div>
+    </section>
+
+    <!-- ==============================================
+         3. FRAMEWORK SECTION
+         ============================================== -->
+    <section class="secao-clara framework-sec" id="framework">
+        <div class="ruido" style="opacity: 0.05; z-index: 0;"></div>
+        <div class="container framework-container" style="position: relative; z-index: 1;">
+            <div class="framework-content">
+
+                <div class="framework-diagram">
+                    <svg viewBox="24 16 312 296" role="img"
+                        aria-label="Diagrama com três círculos que se cruzam: Reconhecer, Redescobrir e Reprogramar, com uma árvore no centro"
+                        class="diagrama-framework">
+                        <defs>
+                            <clipPath id="clip-esquerdo">
+                                <circle cx="128" cy="120" r="100" />
+                            </clipPath>
+                            <clipPath id="clip-direito">
+                                <circle cx="232" cy="120" r="100" />
+                            </clipPath>
+                            <clipPath id="recorte-arvore">
+                                <circle cx="180" cy="149" r="36" />
+                            </clipPath>
+                        </defs>
+
+                        <g class="circulos-base">
+                            <circle cx="128" cy="120" r="100" class="circulo-anim esquerdo" />
+                            <circle cx="232" cy="120" r="100" class="circulo-anim direito" />
+                            <circle cx="180" cy="208" r="100" class="circulo-anim inferior" />
+                        </g>
+
+                        <g class="intersecao-anim">
+                            <g clip-path="url(#clip-esquerdo)">
+                                <g clip-path="url(#clip-direito)">
+                                    <circle cx="180" cy="208" r="100" fill="#E87524" />
+                                </g>
+                            </g>
+
+                            <!-- Imagem da arvore (SVG exige href em vez de src) -->
+                            <image href="./oficial/Arvore.webp" x="153" y="122" width="54" height="54"
+                                preserveAspectRatio="xMidYMid meet" clip-path="url(#recorte-arvore)" aria-hidden="true"
+                                class="arvore-img" />
+                        </g>
+
+                        <g class="rotulos" aria-hidden="true">
+                            <text x="81" y="106" class="rotulo rotulo-esq">RECONHECER</text>
+                            <text x="279" y="106" class="rotulo rotulo-dir">REDESCOBRIR</text>
+                            <text x="180" y="260" class="rotulo rotulo-inf">REPROGRAMAR</text>
+                        </g>
+                    </svg>
+                </div>
+
+                <div class="framework-text">
+                    <h2 class="anim-texto">O Caminho dos 3 Rs por trás de quem voltou a <em>se sentir vivo</em></h2>
+
+                    <p class="p-destaque anim-texto">Você não precisa de mais uma rotina otimizada nem de mais conteúdo
+                        inspirador.</p>
+
+                    <p class="p-forte anim-texto">Você precisa <strong>trocar a lente pela qual enxerga a sua
+                            vida.</strong>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==============================================
+         4. O QUE MUDA SECTION
+         ============================================== -->
+    <section class="secao-clara mudanca-sec" id="mudanca">
+        <div class="ruido" style="opacity: 0.05; z-index: 0;"></div>
+
+        <div class="container mudanca-container">
+            <div class="mudanca-cartao" id="mudanca-cartao">
+                <div class="mudanca-foto-wrapper mudanca-anim" style="--anim-delay: 0;">
+                    <img src="./oficial/assets/mudanca.webp" width="1600" height="1200"
+                        alt="Homem na faixa dos 40 anos na sacada ao nascer do sol segurando caneca de café"
+                        loading="lazy" decoding="async" class="mudanca-foto">
+                    <div class="mudanca-gradiente"></div>
+                </div>
+
+                <div class="mudanca-conteudo">
+                    <h2 class="mudanca-h2 mudanca-anim" style="--anim-delay: 3;">O que muda quando você troca a lente e
+                        os dias <em>voltam a ter cor?</em></h2>
+
+                    <ul class="mudanca-lista">
+                        <li class="mudanca-item mudanca-anim" style="--anim-delay: 4.5;">
+                            <svg class="mudanca-icone" xmlns="http://www.w3.org/2000/svg" width="28" height="28"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path
+                                    d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z">
+                                </path>
+                                <path d="m9 12 2 2 4-4"></path>
+                            </svg>
+                            <span class="mudanca-texto"><strong>Vontade</strong> de levantar, e não só a obrigação de
+                                levantar.</span>
+                        </li>
+                        <li class="mudanca-item mudanca-anim" style="--anim-delay: 5.7;">
+                            <svg class="mudanca-icone" xmlns="http://www.w3.org/2000/svg" width="28" height="28"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path
+                                    d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z">
+                                </path>
+                                <path d="m9 12 2 2 4-4"></path>
+                            </svg>
+                            <span class="mudanca-texto"><strong>Presença</strong> para sentir o gosto da comida, sem
+                                resolver três coisas na cabeça.</span>
+                        </li>
+                        <li class="mudanca-item mudanca-anim" style="--anim-delay: 6.9;">
+                            <svg class="mudanca-icone" xmlns="http://www.w3.org/2000/svg" width="28" height="28"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path
+                                    d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z">
+                                </path>
+                                <path d="m9 12 2 2 4-4"></path>
+                            </svg>
+                            <span class="mudanca-texto"><strong>Firmeza</strong> para atravessar um dia difícil sem se
+                                perder de si mesmo.</span>
+                        </li>
+                        <li class="mudanca-item mudanca-anim" style="--anim-delay: 8.1;">
+                            <svg class="mudanca-icone" xmlns="http://www.w3.org/2000/svg" width="28" height="28"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path
+                                    d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z">
+                                </path>
+                                <path d="m9 12 2 2 4-4"></path>
+                            </svg>
+                            <span class="mudanca-texto"><strong>Planos</strong> para o ano que vem, em vez de esperar o
+                                pior.</span>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 2. O ÚNICO PROBLEMA -->
-    <section id="problema">
-        <div class="container">
-            <h2>Você dá conta de tudo. E termina o dia sentindo que só funcionou.</h2>
-            <p>O trabalho anda. A casa anda. As contas estão pagas.</p>
-            <p>Quem olha de fora diz que está tudo certo.</p>
-            <p>Só que por dentro tem um vazio que você não consegue explicar. E ainda dá culpa de sentir isso, porque tem coisa boa ao seu redor.</p>
-            <p>Aí você tenta resolver.</p>
-            
-            <ul>
-                <li>Talvez tenha tentado organizar melhor a rotina.</li>
-                <li>Talvez tenha se cobrado mais disciplina e mais gratidão.</li>
-                <li>Talvez tenha tirado uns dias de folga e voltado exatamente igual.</li>
-                <li>Talvez tenha começado um hobby novo. Ou lotado o celular de conteúdo inspirador.</li>
-            </ul>
-            
-            <p class="mt-4">Nada disso segurou por muito tempo.</p>
-            <p><strong>Não é falta de força de vontade.</strong></p>
-            <p>Quem sustenta trabalho, casa, família e cobrança dos outros por anos não tem falta de força. Tem de sobra.</p>
-            <p>O problema é outro. E quase ninguém fala dele.</p>
+    <!-- ==============================================
+         5. TUDO O QUE VOCÊ PRECISA SECTION
+         ============================================== -->
+    <section class="tudo-sec" id="tudo">
+        <div class="ruido" style="opacity: 0.06; z-index: 0;"></div>
+        <div class="container tudo-container" style="position: relative; z-index: 1;">
+
+            <h2 class="tudo-h2 anim-tudo" style="--anim-delay: 0;">Tudo o que você precisa para <em>usar a filosofia no
+                    seu dia a dia</em></h2>
+
+            <div class="pilha-cards">
+                <img src="./oficial/assets/a1.webp" alt="Raio X do Propósito" class="card-img card-a1 anim-tudo"
+                    style="--anim-delay: 2.5;">
+                <img src="./oficial/assets/a2.webp" alt="Aulas ao vivo com Rafa Barbosa" class="card-img card-a2 anim-tudo"
+                    style="--anim-delay: 4.9;">
+                <img src="./oficial/assets/a3.webp" alt="Caderno de prática" class="card-img card-a3 anim-tudo"
+                    style="--anim-delay: 3.7;">
+            </div>
+
+            <h3 class="tudo-h3 anim-tudo" style="--anim-delay: 6.5;">Sem livro difícil. Sem curso abandonado na terceira
+                aula.</h3>
+
+            <p class="tudo-p anim-tudo" style="--anim-delay: 7.7;">Aulas ao vivo em que você pergunta sobre a sua vida,
+                exercícios curtos para a filosofia virar hábito e uma turma que caminha junto com você.</p>
+
+            <div class="tudo-botoes">
+                <a href="#oferta" class="btn-principal anim-tudo" style="--anim-delay: 8.9;">
+                    Quero conhecer a escola
+                    <span class="btn-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            aria-hidden="true">
+                            <path d="M5 12h14"></path>
+                            <path d="m12 5 7 7-7 7"></path>
+                        </svg>
+                    </span>
+                </a>
+            </div>
+
+            <a href="#oferta" aria-label="Ir para a próxima seção" class="indicador-rolagem anim-tudo"
+                style="--anim-delay: 10.1;">
+                <svg width="54" height="93" viewBox="0 0 54 93" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="1.5" y="1.5" width="51" height="90" rx="25.5" stroke="#E87524" stroke-width="3" />
+                    <circle cx="27" cy="27" r="13" stroke="#E87524" stroke-width="3" />
+                    <path d="M21 24L27 30L33 24" stroke="#E87524" stroke-width="3" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </a>
+
         </div>
     </section>
 
-    <!-- 3. CONEXÃO E MECANISMO -->
-    <section id="conexao">
-        <div class="container">
-            <h2>Prazer, eu sou o Rafa. Eu era engenheiro e passei um ano inteiro sem sentir nada.</h2>
-            <p>Eu tinha tudo que diziam que eu precisava para ser feliz. Bom emprego. Bom salário. Família presente.</p>
-            <p>E acordava todo dia cansado. Voltava para casa exausto. Alguma coisa dentro de mim tinha desligado.</p>
-            <p>No fim de um ano, esgotado, eu fiz o que todo mundo recomenda. Viajei para o Ceará para descansar. Deu pior.</p>
-            <p>Em cada praia eu não conseguia relaxar. Não sabia se ia para o mar, se lia um livro, se pedia uma comida.</p>
-            
-            <div class="highlight-box">
-                <p class="serif" style="font-size: 1.4rem; color: var(--gold-dark); margin:0;">
-                    <strong>Eu estava praticamente montando uma planilha para otimizar o meu relaxamento.</strong>
+    <!-- ==============================================
+         6. O QUE VOCÊ VAI VIVER LÁ DENTRO SECTION
+         ============================================== -->
+    <section class="viver-sec" id="viver-la-dentro">
+        <div class="ruido" style="opacity: 0.06; z-index: 0;"></div>
+        <div class="container viver-container" style="position: relative; z-index: 1;">
+
+            <h2 class="viver-h2 anim-viver" style="--anim-delay: 0;">O que você vai <em>viver lá dentro?</em></h2>
+
+            <ol class="viver-grade">
+                <!-- Card 1 -->
+                <li class="viver-card anim-viver" style="--desktop-delay: 0;">
+                    <svg class="viver-icone" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" aria-hidden="true">
+                        <circle cx="12" cy="12" r="10" />
+                        <path
+                            d="m16.24 7.76-1.804 5.411a2 2 0 0 1-1.265 1.265L7.76 16.24l1.804-5.411a2 2 0 0 1 1.265-1.265z" />
+                    </svg>
+                    <h3 class="viver-h3">Qual vida vale a pena ser vivida?</h3>
+                    <p class="viver-desc">Como avaliar se a vida que você leva é a que você escolheria.</p>
+                    <span class="viver-num" aria-hidden="true">1</span>
+                </li>
+                <!-- Card 2 -->
+                <li class="viver-card anim-viver" style="--desktop-delay: 0.8;">
+                    <svg class="viver-icone" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" aria-hidden="true">
+                        <path
+                            d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5" />
+                        <path d="M3.22 13H9.5l.5-1 2 4.5 2-7 1.5 3.5h5.27" />
+                    </svg>
+                    <h3 class="viver-h3">O que é sentir de verdade?</h3>
+                    <p class="viver-desc">Como voltar a ser tocado pela vida, em vez de só administrá-la.</p>
+                    <span class="viver-num" aria-hidden="true">2</span>
+                </li>
+                <!-- Card 3 -->
+                <li class="viver-card anim-viver" style="--desktop-delay: 1.6;">
+                    <svg class="viver-icone" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" aria-hidden="true">
+                        <path d="M18 11V6a2 2 0 0 0-2-2a2 2 0 0 0-2 2" />
+                        <path d="M14 10V4a2 2 0 0 0-2-2a2 2 0 0 0-2 2v2" />
+                        <path d="M10 10.5V6a2 2 0 0 0-2-2a2 2 0 0 0-2 2v8" />
+                        <path
+                            d="M18 8a2 2 0 1 1 4 0v6a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-5.99-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.82L7 15" />
+                    </svg>
+                    <h3 class="viver-h3">O que está na sua mão?</h3>
+                    <p class="viver-desc">Como separar o que você controla do que não controla e parar de gastar energia
+                        com o segundo.</p>
+                    <span class="viver-num" aria-hidden="true">3</span>
+                </li>
+                <!-- Card 4 -->
+                <li class="viver-card anim-viver" style="--desktop-delay: 2.4;">
+                    <svg class="viver-icone" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" aria-hidden="true">
+                        <path
+                            d="M12.409 5.824c-.702.792-1.15 1.496-1.415 2.166l2.153 2.156a.5.5 0 0 1 0 .707l-2.293 2.293a.5.5 0 0 0 0 .707L12 15" />
+                        <path
+                            d="M13.508 20.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5a5.5 5.5 0 0 1 9.591-3.677.6.6 0 0 0 .818.001A5.5 5.5 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5z" />
+                    </svg>
+                    <h3 class="viver-h3">E quando alguém te decepciona?</h3>
+                    <p class="viver-desc">Como responder sem levar o dia inteiro remoendo.</p>
+                    <span class="viver-num" aria-hidden="true">4</span>
+                </li>
+                <!-- Card 5 -->
+                <li class="viver-card anim-viver" style="--desktop-delay: 0;">
+                    <svg class="viver-icone" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" aria-hidden="true">
+                        <path d="M13 21h8" />
+                        <path
+                            d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z" />
+                    </svg>
+                    <h3 class="viver-h3">Quem escreve a sua história?</h3>
+                    <p class="viver-desc">Como entender que o seu futuro ainda não está decidido.</p>
+                    <span class="viver-num" aria-hidden="true">5</span>
+                </li>
+                <!-- Card 6 -->
+                <li class="viver-card anim-viver" style="--desktop-delay: 0.8;">
+                    <svg class="viver-icone" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" aria-hidden="true">
+                        <path d="M12 2v8" />
+                        <path d="m4.93 10.93 1.41 1.41" />
+                        <path d="M2 18h2" />
+                        <path d="M20 18h2" />
+                        <path d="m19.07 10.93-1.41 1.41" />
+                        <path d="M22 22H2" />
+                        <path d="m8 6 4-4 4 4" />
+                        <path d="M16 18a4 4 0 0 0-8 0" />
+                    </svg>
+                    <h3 class="viver-h3">E se o pior não acontecer?</h3>
+                    <p class="viver-desc">Como parar de esperar o pior e voltar a fazer planos para o futuro.</p>
+                    <span class="viver-num" aria-hidden="true">6</span>
+                </li>
+                <!-- Card 7 -->
+                <li class="viver-card anim-viver" style="--desktop-delay: 1.6;">
+                    <svg class="viver-icone" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" aria-hidden="true">
+                        <path d="M12 18V5" />
+                        <path d="M15 13a4.17 4.17 0 0 1-3-4 4.17 4.17 0 0 1-3 4" />
+                        <path d="M17.598 6.5A3 3 0 1 0 12 5a3 3 0 1 0-5.598 1.5" />
+                        <path d="M17.997 5.125a4 4 0 0 1 2.526 5.77" />
+                        <path d="M18 18a4 4 0 0 0 2-7.464" />
+                        <path d="M19.967 17.483A4 4 0 1 1 12 18a4 4 0 1 1-7.967-.517" />
+                        <path d="M6 18a4 4 0 0 1-2-7.464" />
+                        <path d="M6.003 5.125a4 4 0 0 0-2.526 5.77" />
+                    </svg>
+                    <h3 class="viver-h3">Quando paramos de pensar por nós mesmos?</h3>
+                    <p class="viver-desc">Como reconhecer as lentes que pensam por você.</p>
+                    <span class="viver-num" aria-hidden="true">7</span>
+                </li>
+                <!-- Card 8 -->
+                <li class="viver-card anim-viver" style="--desktop-delay: 0;">
+                    <svg class="viver-icone" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" aria-hidden="true">
+                        <path d="M22 14v-4" />
+                        <path d="M6 14v-4" />
+                        <rect x="2" y="6" width="16" height="12" rx="2" />
+                    </svg>
+                    <h3 class="viver-h3">Por que estamos tão cansados?</h3>
+                    <p class="viver-desc">Como entender de onde vêm a pressa e o cansaço dos seus dias.</p>
+                    <span class="viver-num" aria-hidden="true">8</span>
+                </li>
+                <!-- Card 9 -->
+                <li class="viver-card anim-viver" style="--desktop-delay: 0.8;">
+                    <svg class="viver-icone" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" aria-hidden="true">
+                        <path d="M12.8 19.6A2 2 0 1 0 14 16H2" />
+                        <path d="M17.5 8a2.5 2.5 0 1 1 2 4H2" />
+                        <path d="M9.8 4.4A2 2 0 1 1 11 8H2" />
+                    </svg>
+                    <h3 class="viver-h3">Breve respiro para repensar</h3>
+                    <p class="viver-desc">Como fazer uma pausa curta para repensar antes de seguir no automático.</p>
+                    <span class="viver-num" aria-hidden="true">9</span>
+                </li>
+                <!-- Card 10 -->
+                <li class="viver-card anim-viver" style="--desktop-delay: 1.6;">
+                    <svg class="viver-icone" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" aria-hidden="true">
+                        <path
+                            d="M12 5a3 3 0 1 1 3 3m-3-3a3 3 0 1 0-3 3m3-3v1M9 8a3 3 0 1 0 3 3M9 8h1m5 0a3 3 0 1 1-3 3m3-3h-1m-2 3v-1" />
+                        <circle cx="12" cy="8" r="2" />
+                        <path d="M12 10v12" />
+                        <path d="M12 22c4.2 0 7-1.667 7-5-4.2 0-7 1.667-7 5Z" />
+                        <path d="M12 22c-4.2 0-7-1.667-7-5 4.2 0 7 1.667 7 5Z" />
+                    </svg>
+                    <h3 class="viver-h3">O que ainda é bonito no caminho?</h3>
+                    <p class="viver-desc">Como voltar a reparar no que hoje você faz no automático.</p>
+                    <span class="viver-num" aria-hidden="true">10</span>
+                </li>
+            </ol>
+        </div>
+    </section>
+
+    <!-- ==============================================
+         7. E MAIS SECTION
+         ============================================== -->
+    <section class="emais-sec" id="emais">
+        <div class="ruido" style="opacity: 0.06; z-index: 0;"></div>
+        <div class="container emais-container" style="position: relative; z-index: 1;">
+
+            <h2 class="emais-h2 anim-emais" style="--anim-delay: 0;">E mais: <em>tudo isso está incluído</em></h2>
+
+            <ul class="emais-lista">
+                <!-- Card 1 -->
+                <li class="emais-card anim-emais" style="--desktop-delay: 0;">
+                    <div class="emais-img-wrapper"><img src="./oficial/assets/e1.webp"
+                            alt="Aula ao vivo com o Rafa em notebook e celular" loading="lazy" decoding="async"
+                            class="emais-img"></div>
+                    <div class="emais-conteudo">
+                        <h3 class="emais-h3">Aulas semanais ao vivo com o Rafa</h3>
+                        <p class="emais-desc">Todo o conteúdo da escola é dado por mim, ao vivo. Você pergunta na hora,
+                            conta o que está vivendo e sai com a filosofia aplicada à sua semana. Perdeu? Fica tudo
+                            gravado.</p>
+                    </div>
+                </li>
+                <!-- Card 2 -->
+                <li class="emais-card anim-emais" style="--desktop-delay: 0.8;">
+                    <div class="emais-img-wrapper"><img src="./oficial/assets/e2.webp"
+                            alt="Capas das séries Um Dia Com Marco Aurélio e Expresso Filosofia" loading="lazy"
+                            decoding="async" class="emais-img"></div>
+                    <div class="emais-conteudo">
+                        <h3 class="emais-h3">Todas as séries, as de hoje e as futuras</h3>
+                        <p class="emais-desc">Você leva as séries que já estão disponíveis, "Um Dia Com Marco Aurélio" e
+                            "Expresso Filosofia", e todas as que eu lançar daqui para frente, sem pagar nada a mais.</p>
+                    </div>
+                </li>
+                <!-- Card 3 -->
+                <li class="emais-card anim-emais" style="--desktop-delay: 1.6;">
+                    <div class="emais-img-wrapper"><img src="./oficial/assets/e3.webp"
+                            alt="Live com convidado exibida em um notebook" loading="lazy" decoding="async"
+                            class="emais-img"></div>
+                    <div class="emais-conteudo">
+                        <h3 class="emais-h3">Aulas com convidados</h3>
+                        <p class="emais-desc">Conversas com amigos da filosofia e da psicologia para ampliar o seu
+                            repertório e trazer outros olhares para a sua vida.</p>
+                    </div>
+                </li>
+                <!-- Card 4 -->
+                <li class="emais-card anim-emais" style="--desktop-delay: 0;">
+                    <div class="emais-img-wrapper"><img src="./oficial/assets/e4.webp"
+                            alt="Conversa da comunidade Ágora no celular" loading="lazy" decoding="async"
+                            class="emais-img"></div>
+                    <div class="emais-conteudo">
+                        <h3 class="emais-h3">Ágora: a comunidade para debater</h3>
+                        <p class="emais-desc">Escola sem pátio não é escola. É aqui que você troca ideia com quem quer a
+                            mesma coisa que você.</p>
+                        <ul class="emais-selos">
+                            <li><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" aria-hidden="true" class="emais-icone">
+                                    <path
+                                        d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526" />
+                                    <circle cx="12" cy="8" r="6" />
+                                </svg><span>Grupo fechado no WhatsApp</span></li>
+                            <li><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" aria-hidden="true" class="emais-icone">
+                                    <path
+                                        d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526" />
+                                    <circle cx="12" cy="8" r="6" />
+                                </svg><span>Debates entre os alunos</span></li>
+                            <li><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" aria-hidden="true" class="emais-icone">
+                                    <path
+                                        d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526" />
+                                    <circle cx="12" cy="8" r="6" />
+                                </svg><span>Perguntas direto para mim</span></li>
+                        </ul>
+                    </div>
+                </li>
+                <!-- Card 5 -->
+                <li class="emais-card anim-emais" style="--desktop-delay: 0.8;">
+                    <div class="emais-img-wrapper"><img src="./oficial/assets/e5.webp"
+                            alt="Cadernos de exercícios e templates em notebook e tablet" loading="lazy"
+                            decoding="async" class="emais-img"></div>
+                    <div class="emais-conteudo">
+                        <h3 class="emais-h3">Cadernos, sistemas e templates</h3>
+                        <p class="emais-desc">Cadernos de exercícios, e-books e modelos que eu uso, para você praticar e
+                            adaptar à sua rotina.</p>
+                    </div>
+                </li>
+                <!-- Card 6 -->
+                <li class="emais-card anim-emais" style="--desktop-delay: 0;">
+                    <div class="emais-img-wrapper"><img src="./oficial/assets/e6.webp" alt="Resumos das aulas em PDF"
+                            loading="lazy" decoding="async" class="emais-img"></div>
+                    <div class="emais-conteudo">
+                        <h3 class="emais-h3">Resumos das aulas em PDF</h3>
+                        <p class="emais-desc">O essencial de cada aula em poucos minutos, para revisar sem reassistir.
+                        </p>
+                    </div>
+                </li>
+                <!-- Card 7 -->
+                <li class="emais-card anim-emais" style="--desktop-delay: 0.8;">
+                    <div class="emais-img-wrapper"><img src="./oficial/assets/e7.webp" alt="Acampamento de filosofia de um dia"
+                            loading="lazy" decoding="async" class="emais-img"></div>
+                    <div class="emais-conteudo">
+                        <h3 class="emais-h3">Acampamentos</h3>
+                        <p class="emais-desc">Acesso gratuito a todos os meus acampamentos pagos. Um dia inteiro
+                            aprofundando em um tema da filosofia, com a gravação liberada para você.</p>
+                    </div>
+                </li>
+                <!-- Card 8 -->
+                <li class="emais-card anim-emais" style="--desktop-delay: 0;">
+                    <div class="emais-img-wrapper"><img src="./oficial/assets/e8.webp"
+                            alt="Conversas com o Benedito e o Marquito no celular" loading="lazy" decoding="async"
+                            class="emais-img"></div>
+                    <div class="emais-conteudo">
+                        <h3 class="emais-h3">Benedito e Marquito</h3>
+                        <p class="emais-desc">Dois guias de inteligência artificial, disponíveis a qualquer hora, até às
+                            3 da manhã.</p>
+                        <ul class="emais-selos">
+                            <li><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" aria-hidden="true" class="emais-icone">
+                                    <path
+                                        d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526" />
+                                    <circle cx="12" cy="8" r="6" />
+                                </svg><span><strong>Benedito:</strong> treinado com todo o meu conteúdo. Você pergunta e
+                                    ele responde.</span></li>
+                            <li><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" aria-hidden="true" class="emais-icone">
+                                    <path
+                                        d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526" />
+                                    <circle cx="12" cy="8" r="6" />
+                                </svg><span><strong>Marquito:</strong> treinado com o conteúdo de Marco Aurélio, para
+                                    você conversar com as ideias dele.</span></li>
+                        </ul>
+                    </div>
+                </li>
+                <!-- Card 9 -->
+                <li class="emais-card anim-emais" style="--desktop-delay: 0.8;">
+                    <div class="emais-img-wrapper"><img src="./oficial/assets/e9.webp"
+                            alt="Capas dos mini-cursos e palestras gravadas" loading="lazy" decoding="async"
+                            class="emais-img"></div>
+                    <div class="emais-conteudo">
+                        <h3 class="emais-h3">Meus mini-cursos e palestras gravadas</h3>
+                        <p class="emais-desc">Tudo o que já gravei, para você assistir no seu tempo e voltar quando
+                            precisar.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- ==============================================
+         8. MEMBROS FUNDADORES SECTION
+         ============================================== -->
+    <section class="fundadores-sec" id="fundadores">
+        <div class="ruido" style="opacity: 0.06; z-index: 0;"></div>
+        <div class="container fundadores-container" style="position: relative; z-index: 1;">
+
+            <div class="fundadores-content">
+                <div class="fundadores-header anim-fundador" style="--anim-delay: 0;">
+                    <p class="fundadores-num-wrapper">
+                        <span class="fundadores-num"></span>
+                        <span class="fundadores-label">membros fundadores</span>
+                    </p>
+                </div>
+
+                <h2 class="fundadores-h2 anim-fundador" style="--anim-delay: 2;">
+                    O preço de hoje vale até a <em>última vaga de fundador</em>
+                </h2>
+
+                <div class="fundadores-progresso anim-fundador" style="--anim-delay: 4;">
+                    <div class="fundadores-bar-container" role="progressbar" aria-valuemin="0" aria-valuemax="100"
+                        aria-valuenow="0" aria-label="Vagas de membro fundador preenchidas">
+                        <div class="fundadores-track">
+                            <div class="fundadores-fill"></div>
+                        </div>
+                    </div>
+                    <div class="fundadores-rotulos">
+                        <span class="fundadores-texto-esq"><span class="fundadores-percentual-bold"></span>% das vagas
+                            preenchidas</span>
+                        <span class="fundadores-texto-dir">Restam <span class="fundadores-restantes"></span></span>
+                    </div>
+                </div>
+
+                <p class="fundadores-texto anim-fundador" style="--anim-delay: 6;">
+                    Quando a turma chegar em <span class="fundadores-total"></span>, o valor sobe.
                 </p>
+
+                <a href="#oferta" class="btn-principal btn-fundador anim-fundador" style="--anim-delay: 7.5;">
+                    Quero ser membro fundador
+                    <span class="btn-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            aria-hidden="true">
+                            <path d="M5 12h14"></path>
+                            <path d="m12 5 7 7-7 7"></path>
+                        </svg>
+                    </span>
+                </a>
             </div>
 
-            <p>Num dos últimos dias, num restaurante à beira mar, um surfista sentado ao meu lado recebeu o prato dele, juntou as mãos e agradeceu. Achei aquilo tão bonito que resolvi imitar. Pedi um peixe.</p>
-            <p>Quando chegou, olhei em volta para ver se ninguém estava me olhando, juntei as mãos e fechei os olhos.</p>
-            <p>E não consegui.</p>
-            <p>Minha cabeça não silenciava. Eu não sabia dizer se sentia raiva, medo ou alegria. Nada estava claro. Eu comecei a chorar ali, na mesa.</p>
-            <p>Foi ali que eu entendi uma coisa: de tanto querer entender de máquina, eu tinha virado uma.</p>
-
-            <img src="rafa_foto.png" alt="Foto do Rafa" class="img-fluid">
-
-            <p>Estudando filosofia depois disso, eu achei o nome do que estava acontecendo comigo.</p>
-            <p><strong>Chama vida administrada.</strong></p>
-            <p>A nossa vida é movida por duas forças: o dever e o querer. O querer é o combustível. O dever é a segurança.</p>
-            <p>Quando somos jovens, o querer manda. Com o tempo vêm as responsabilidades e a balança vira.</p>
-            <p>Até que um dia o dever deixa de ser ferramenta e vira o seu único jeito de viver.</p>
-            <p>Aí você para de habitar a vida. Só administra ela.</p>
-
-            <div class="highlight-box">
-                <h3 class="text-center">O TESTE DE UMA PALAVRA SÓ</h3>
-                <p>Antes você dizia: <em>eu quero conhecer aquele lugar. Eu quero cuidar de mim. Eu quero começar aquele projeto.</em></p>
-                <p>Hoje você diz: <em>eu tenho que me exercitar. Eu tenho que descansar. Eu tenho que ver aquela pessoa.</em></p>
-                <p><strong>Quando o "eu quero" some e sobra só o "eu tenho", até o seu descanso virou obrigação.</strong></p>
-                <p>E o que é obrigação cansa. Sempre.</p>
-            </div>
-
-            <p>E se você trocar só o lado de fora, não muda nada.</p>
-            <p>É como viajar de trem com uma película escura na janela. A paisagem lá fora continua linda. O que ficou sem cor foi o que chega até os seus olhos.</p>
-            <p>Você pode mudar de emprego, de cidade e de rotina. Se levar a mesma película junto, todo lugar novo também vai perder a cor.</p>
-
-            <img src="train_windows.png" alt="Ilustração Janela de Trem" class="img-fluid">
         </div>
     </section>
 
-    <!-- 4. A SOLUÇÃO -->
-    <section id="solucao">
-        <div class="container">
-            <h2>O que você perdeu tem nome. E dá para ter de volta.</h2>
-            <p>Os gregos chamavam de <em>pathos</em>.</p>
-            <p>É a nossa capacidade de ser tocado pela vida. Não é paixão de namoro. É sentir de verdade o que acontece com você.</p>
-            <p>Todo mundo nasce com isso. A vida administrada só foi apagando.</p>
-            <p><strong>Quando o pathos volta, a mudança não é na sua agenda. É no seu olhar.</strong></p>
-            
-            <p class="mt-4">E aí a sua semana começa a ficar assim:</p>
-            <ul>
-                <li>Você acorda e levanta porque quer levantar, não só porque precisa.</li>
-                <li>Você senta para almoçar e sente o gosto da comida, sem resolver três coisas na cabeça.</li>
-                <li>Você atravessa um dia difícil sem se perder de si mesmo, porque sabe voltar.</li>
-                <li>Você volta a fazer plano para o ano que vem, em vez de esperar o pior.</li>
-                <li>Você deita na cama e pensa: como é bom estar vivo.</li>
+    <!-- ==============================================
+         9. FUNCIONA PARA MIM SECTION
+         ============================================== -->
+    <section class="funciona-sec" id="funciona">
+        <div class="ruido" style="opacity: 0.05; z-index: 0;"></div>
+        <div class="container funciona-container" style="position: relative; z-index: 1;">
+
+            <h2 class="funciona-h2 anim-funciona" style="--anim-delay: 0;">
+                A escola <em>funciona para mim?</em>
+            </h2>
+
+            <div class="funciona-textos">
+                <p class="anim-funciona" style="--anim-delay: 1.5;">Funciona para qualquer pessoa que sustenta a própria
+                    vida, mesmo que nunca tenha lido uma página de filosofia.</p>
+                <p class="anim-funciona" style="--anim-delay: 3;"><strong>Na escola você aprende a transformar a
+                        filosofia em uma ferramenta prática para o seu dia a dia.</strong> Seja qual for a sua profissão
+                    ou o seu momento.</p>
+                <p class="anim-funciona" style="--anim-delay: 4.5;">Ela serve para o cansaço do trabalho, a cobrança da
+                    casa, o vazio sem explicação, a culpa de sentir, o hábito de esperar o pior e o dia em que alguém te
+                    decepciona.</p>
+            </div>
+
+            <!-- Acessibilidade -->
+            <ul class="sr-only">
+                <li>Engenheiros</li>
+                <li>Médicos</li>
+                <li>Advogados</li>
+                <li>Professores</li>
+                <li>Enfermeiros</li>
+                <li>Empresários</li>
+                <li>Autônomos</li>
+                <li>Servidores públicos</li>
+                <li>Gerentes</li>
+                <li>Vendedores</li>
+                <li>Motoristas</li>
+                <li>Designers</li>
+                <li>Programadores</li>
+                <li>Psicólogos</li>
+                <li>Arquitetos</li>
+                <li>Contadores</li>
+                <li>Bancários</li>
+                <li>Militares</li>
+                <li>Mães</li>
+                <li>Pais</li>
+                <li>Estudantes</li>
+                <li>Aposentados</li>
+                <li>Quem diz "eu tenho que" o dia todo</li>
+                <li>Quem nunca leu filosofia</li>
+                <li>Quem já tentou de tudo</li>
+                <li>Quem quer aprender junto</li>
             </ul>
-            
-            <p class="mt-4">Não é que os dias ficam fáceis. Os meus não ficaram.</p>
-            <p>É que eles voltam a ter cor.</p>
+
+            <div class="funciona-nuvem" aria-hidden="true">
+                <!-- Gerado via JavaScript -->
+            </div>
+
         </div>
     </section>
 
-    <!-- 5. MECANISMO DA SOLUÇÃO (3 Rs) -->
-    <section id="mecanismo">
-        <div class="container">
-            <h2>O caminho dos 3 Rs: como se troca a película da janela</h2>
-            
-            <div class="grid-3">
-                <div class="step-card">
-                    <div class="step-number">1</div>
-                    <h4>Reconhecer</h4>
-                    <p>Um raio X para enxergar quais lentes governam a sua vida hoje. Ninguém troca um óculos sem antes perceber que está usando um.</p>
+    <!-- ==============================================
+         10. AUTORIDADE SECTION
+         ============================================== -->
+    <section class="autoridade-sec" id="autoridade">
+        <div class="ruido" style="opacity: 0.05; z-index: 0;"></div>
+        <div class="container autoridade-container" style="position: relative; z-index: 1;">
+
+            <div class="autoridade-conteudo">
+                <h2 class="autoridade-h2 anim-autoridade">
+                    Ensinado por quem <em>já esteve aí</em>
+                </h2>
+
+                <div class="autoridade-historia">
+                    <p class="anim-autoridade">Prazer, eu sou o Rafa. Eu era engenheiro e passei um ano inteiro sem
+                        sentir nada.</p>
+                    <p class="anim-autoridade">Eu tinha o que diziam que eu precisava: bom emprego, bom salário, família
+                        presente. E acordava todo dia cansado.</p>
+                    <p class="anim-autoridade">Viajei para o Ceará para descansar. Deu pior. Eu estava montando uma
+                        planilha para otimizar o meu relaxamento.</p>
+                    <p class="anim-autoridade">Num restaurante à beira-mar, um surfista recebeu o prato, juntou as mãos
+                        e agradeceu. Achei bonito e resolvi imitar. Fechei os olhos e não consegui. Comecei a chorar
+                        ali, na mesa.</p>
+
+                    <blockquote class="autoridade-citacao anim-autoridade">
+                        Foi quando entendi: de tanto querer entender de máquina, eu tinha virado uma.
+                    </blockquote>
+
+                    <p class="anim-autoridade">Estudando filosofia, achei o nome do que acontecia comigo: <strong>vida
+                            administrada</strong>. É quando o dever, que devia ser ferramenta, vira o seu único jeito de
+                        viver. Você para de habitar a vida. Só administra ela.</p>
+                    <p class="anim-autoridade">De lá para cá, levei essa filosofia para mais de 80 mil pessoas em
+                        palestras presenciais pelo Brasil. Rádios, TVs e podcasts passaram a me chamar de a nova voz da
+                        filosofia no Brasil. Todo dia de manhã eu falo com a comunidade nas Sementes Matinais.</p>
+                    <p class="anim-autoridade">Construí a Escola Natureza Filosófica para o Rafa de lá de trás: aquele
+                        engenheiro que não sabia nada e teve que aprender tudo do zero.</p>
                 </div>
-                <div class="step-card">
-                    <div class="step-number">2</div>
-                    <h4>Redescobrir</h4>
-                    <p>Você ganha repertório novo em quatro áreas da filosofia. Se o repertório é o mesmo de sempre, a resposta é a mesma de sempre.</p>
-                </div>
-                <div class="step-card">
-                    <div class="step-number">3</div>
-                    <h4>Reprogramar</h4>
-                    <p>Aqui o princípio vira treino, e o treino vira segunda natureza. Conhecimento que fica na cabeça não muda ninguém.</p>
+
+                <div class="autoridade-fechamento anim-autoridade">
+                    <p class="autoridade-fechamento-linha1">Talvez... seja exatamente isso o que você precisa.</p>
+                    <p class="autoridade-fechamento-linha2">Bora nessa?</p>
                 </div>
             </div>
 
-            <p class="text-center">Sem o primeiro, você é governado por lentes que nem vê.<br>
-            Sem o segundo, você enxerga o problema e não tem resposta nova.<br>
-            Sem o terceiro, você tem a resposta nova e reage igual a sempre.<br>
-            <strong>Os três juntos, e só juntos, formam o caminho.</strong></p>
-
-            <div class="divider"></div>
-
-            <h3 class="text-center">Agora, o problema de tentar isso sozinho</h3>
-            <p>São mais de 2.000 anos de filosofia. Centenas de autores. Milhares de conceitos, quase todos escritos em livro acadêmico.</p>
-            <p>Você ia levar anos para separar o que serve para a sua vida do que só serve para prova de faculdade.</p>
-            <p>E tem um risco pior. Estudar filosofia sem direção vira mais uma tarefa na sua lista.</p>
-            <p><strong>Aí a filosofia, que quer dizer amor pela sabedoria, vira mais um dever. E te joga de volta na vida administrada.</strong></p>
-            
-            <p>Você pode ir na raça, sem saber nada do lugar. Pode comprar um mapa sem guia. Ou você pode ir com um guia local e com um grupo que quer a mesma coisa que você.</p>
-            <p class="text-center mt-4"><strong>Foi para isso que eu construí a Escola Natureza Filosófica.</strong></p>
-
-            <div class="btn-cta-wrapper">
-                <a href="https://pay.hotmart.com/E106651725U?off=x8sw7f6b" class="btn-cta">Quero conhecer a escola</a>
-                <span class="btn-subtitle">12x de R$59,70 | Início imediato | Garantia dupla</span>
+            <div class="autoridade-foto-wrapper">
+                <picture class="anim-autoridade">
+                    <source srcset="./assets/rafa_foto.webp" type="image/webp">
+                    <img src="./oficial/assets/rafa_foto.webp" alt="Rafa Barbosa, a nova voz da filosofia no Brasil"
+                        loading="lazy" decoding="async" class="autoridade-foto">
+                </picture>
             </div>
+
         </div>
     </section>
 
-    <!-- 6. PRODUTO -->
-    <section id="produto">
-        <div class="container text-center">
-            <h2>Escola Natureza Filosófica</h2>
-            <p>Uma escola para você sair da vida administrada e voltar a se apaixonar pelo seu viver.</p>
-            <p>Não é curso gravado para você assistir sozinho e abandonar na terceira aula.</p>
-            <p><strong>É escola. Com aula ao vivo, professor que te escuta e turma que caminha junto.</strong></p>
-            
-            <div class="highlight-box text-left">
-                <h3 class="text-center">Como funciona:</h3>
-                <ul>
-                    <li>Aulas ao vivo comigo, com espaço para você perguntar e contar o que está vivendo.</li>
-                    <li>As quatro grandes áreas da filosofia, já filtradas para a sua vida. Sem livro difícil e sem autor indecifrável.</li>
-                    <li>Um caderno de prática para o conhecimento virar hábito.</li>
-                    <li>Tudo gravado, caso você perca algum encontro.</li>
-                    <li>Começa imediatamente, com a aula inaugural desta semana.</li>
-                </ul>
-            </div>
+    <!-- ==============================================
+         11. OFERTA SECTION
+         ============================================== -->
+    <section class="oferta-sec" id="oferta">
+        <div class="ruido" style="opacity: 0.06; z-index: 0;"></div>
 
-            <img src="Escola.png" alt="Mockup da Escola" class="img-fluid">
+        <picture>
+            <source srcset="./assets/rafa_oferta.webp" type="image/webp">
+            <img src="./oficial/assets/rafa_oferta.webp" alt="Rafa Barbosa" loading="lazy" decoding="async"
+                class="oferta-foto anim-oferta">
+        </picture>
+        <div class="oferta-degrade"></div>
 
-            <div class="btn-cta-wrapper">
-                <a href="https://pay.hotmart.com/E106651725U?off=x8sw7f6b" class="btn-cta">Quero entrar na escola</a>
-                <span class="btn-subtitle">12x de R$59,70 | Início imediato | Garantia dupla</span>
-            </div>
-        </div>
-    </section>
+        <div class="container oferta-container">
+            <div class="oferta-conteudo-wrapper">
+                <div class="oferta-card anim-oferta" style="--anim-delay: 2;">
+                    <h2 class="oferta-h2 anim-oferta" style="--anim-delay: 3.5;">
+                        Sua vaga de membro fundador
+                    </h2>
 
-    <!-- 7. COMPARAÇÃO -->
-    <section id="comparacao">
-        <div class="container">
-            <h2>Por que não resolveu das outras formas</h2>
-            <div style="overflow-x:auto;">
-                <table class="premium-table">
-                    <thead>
-                        <tr>
-                            <th>Recurso</th>
-                            <th>Escola Natureza Filosófica</th>
-                            <th>Outras Formas (Livros, Gravados, Pós)</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><strong>Aula ao vivo com professor</strong></td>
-                            <td><span class="table-check">✔</span> Sim</td>
-                            <td><span class="table-cross">✖</span> Raro / Não tem</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Pode perguntar sobre a SUA vida</strong></td>
-                            <td><span class="table-check">✔</span> Sim</td>
-                            <td><span class="table-cross">✖</span> Não</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Conteúdo filtrado pro dia a dia</strong></td>
-                            <td><span class="table-check">✔</span> Sim</td>
-                            <td><span class="table-cross">✖</span> Você filtra sozinho</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Prática guiada, não só teoria</strong></td>
-                            <td><span class="table-check">✔</span> Sim</td>
-                            <td><span class="table-cross">✖</span> Não tem</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Turma caminhando junto</strong></td>
-                            <td><span class="table-check">✔</span> Sim</td>
-                            <td><span class="table-cross">✖</span> Apenas em pós</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Tempo até primeira aplicação</strong></td>
-                            <td><span class="table-check">✔</span> 1ª semana</td>
-                            <td><span class="table-cross">✖</span> Meses ou anos</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Investimento</strong></td>
-                            <td><span class="table-check">✔</span> <strong>R$597</strong></td>
-                            <td><span class="table-cross">✖</span> R$2.000 a R$5.000+</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <p>Ler sozinho é mais barato no começo e mais caro no fim, porque você gasta anos para achar o que serve para você.</p>
-            <p>Curso gravado entrega informação. Ninguém muda de vida só com informação.</p>
-            <p><strong>A pós forma professor de filosofia. Aqui a gente não está formando professor. Está devolvendo gente para a própria vida.</strong></p>
-        </div>
-    </section>
-
-    <!-- 8. OBJEÇÕES -->
-    <section id="objecoes">
-        <div class="container">
-            <h3 class="text-center">As 3 principais perguntas na sua cabeça agora</h3>
-            
-            <div class="mt-4">
-                <h4 class="serif">"Nunca estudei filosofia. Vou conseguir acompanhar?"</h4>
-                <p>Vai. Eu montei essa escola para o Rafa de trás, aquele engenheiro que não sabia nada e teve que aprender tudo do zero. É o conteúdo que eu queria ter encontrado naquela época. Simples, com exemplo real, sem palavra difícil. Você não vai enfrentar livro enorme. Esse trabalho é meu.</p>
-                <div class="print-mockup" style="max-width: 400px;">
-                    "Achei que ia ser difícil, mas o jeito que o Rafa explica parece conversa de bar. Muito didático!"
-                    <div class="print-author">- Aluno</div>
-                </div>
-            </div>
-
-            <div class="mt-4">
-                <h4 class="serif">"E se eu não puder assistir ao vivo?"</h4>
-                <p>Todos os encontros ficam gravados. Você assiste no seu tempo. E eu assumo um compromisso: ninguém vai ficar de fora por causa de horário. A gente marca reposição e ajusta o dia conforme a turma. O caderno de prática você faz quando quiser. Não tem prazo correndo atrás de você.</p>
-            </div>
-
-            <div class="mt-4">
-                <h4 class="serif">"E se eu entrar e não for para mim?"</h4>
-                <p>Todo produto digital é obrigado a dar 7 dias de garantia. Isso não é bondade de ninguém, é lei. Por isso a nossa garantia é maior. São 7 dias sem pergunta nenhuma, mais 15 dias de garantia estendida. Entra, participa do encontro, assiste as trilhas, sente o ambiente. Se não for para você, é só pedir reembolso.</p>
-                <p><strong>Sem justificar nada para ninguém.</strong> Eu quero você lá dentro porque você quer estar. Não porque ficou preso.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- 9. BENEFÍCIOS -->
-    <section id="beneficios">
-        <div class="container">
-            <h2>O que muda nos seus próximos meses</h2>
-            <div class="highlight-box">
-                <ul style="text-align: left; margin-left: 20px;">
-                    <li>Acordar sabendo por que está levantando, e não só que precisa levantar.</li>
-                    <li>Sentar para comer e sentir o gosto da comida, com a cabeça naquele momento.</li>
-                    <li>Parar de brigar com o que você não controla e gastar essa energia no que dá para mudar.</li>
-                    <li>Ter o que responder quando alguém te decepcionar, em vez de levar o dia inteiro remoendo.</li>
-                    <li>Voltar a fazer plano para o ano que vem.</li>
-                    <li>Reparar em coisa bonita no caminho de casa, que hoje você faz no automático.</li>
-                    <li>Deitar a cabeça no travesseiro e pensar: como é bom estar vivo.</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <!-- 10. ROTA DA SOLUÇÃO -->
-    <section id="rota">
-        <div class="container">
-            <h2>Seu caminho começa hoje, em 4 passos</h2>
-            <div class="grid-4">
-                <div class="step-card highlight-box" style="margin: 0; padding: 20px;">
-                    <h3 class="serif">PASSO 1</h3>
-                    <p>Entre e faça o Raio X do Propósito. Descubra qual dos quatro pilares apagou primeiro em você.</p>
-                </div>
-                <div class="step-card highlight-box" style="margin: 0; padding: 20px;">
-                    <h3 class="serif">PASSO 2</h3>
-                    <p>Participe da primeira aula ao vivo. É onde a filosofia vira conversa sobre a sua vida.</p>
-                </div>
-                <div class="step-card highlight-box" style="margin: 0; padding: 20px;">
-                    <h3 class="serif">PASSO 3</h3>
-                    <p>Abra o caderno e faça o primeiro exercício de sentir, pensar e agir. Leva poucos minutos.</p>
-                </div>
-                <div class="step-card highlight-box" style="margin: 0; padding: 20px;">
-                    <h3 class="serif">PASSO 4</h3>
-                    <p>Perceba, numa terça qualquer, que você voltou a dizer "eu quero" sem se dar conta.</p>
-                </div>
-            </div>
-
-            <div class="btn-cta-wrapper">
-                <a href="https://pay.hotmart.com/E106651725U?off=x8sw7f6b" class="btn-cta">Quero começar pelo Passo 1</a>
-                <span class="btn-subtitle">12x de R$59,70 | Aula inaugural nesta semana</span>
-            </div>
-        </div>
-    </section>
-
-    <!-- Continua nas próximas sessões... Dividindo arquivo se ficar muito longo -->
-    
-    <!-- 11. PARA QUEM É -->
-    <section id="para-quem">
-        <div class="container">
-            <div class="grid-4">
-                <div>
-                    <h3 class="serif" style="color: var(--text-main);">A escola É para você se:</h3>
-                    <ul>
-                        <li>Sustenta casa/família e sente que só está funcionando.</li>
-                        <li>Já tentou organizar a rotina, descansar e nada resolveu.</li>
-                        <li>Diz "eu tenho que" muito mais vezes do que "eu quero".</li>
-                        <li>Quer aprender junto com gente, não sozinho na frente da tela.</li>
+                    <ul class="oferta-lista">
+                        <li class="anim-oferta" style="--anim-delay: 4.5;">
+                            <svg class="oferta-icone" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="22"
+                                height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" />
+                                <path d="m9 12 2 2 4-4" />
+                            </svg>
+                            <span>Aulas semanais ao vivo</span>
+                        </li>
+                        <li class="anim-oferta" style="--anim-delay: 5.1;">
+                            <svg class="oferta-icone" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="22"
+                                height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" />
+                                <path d="m9 12 2 2 4-4" />
+                            </svg>
+                            <span>Raio X e caderno de prática</span>
+                        </li>
+                        <li class="anim-oferta" style="--anim-delay: 5.7;">
+                            <svg class="oferta-icone" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="22"
+                                height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" />
+                                <path d="m9 12 2 2 4-4" />
+                            </svg>
+                            <span>Aulas com convidados</span>
+                        </li>
+                        <li class="anim-oferta" style="--anim-delay: 6.3;">
+                            <svg class="oferta-icone" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="22"
+                                height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" />
+                                <path d="m9 12 2 2 4-4" />
+                            </svg>
+                            <span>Ágora: comunidade e WhatsApp</span>
+                        </li>
+                        <li class="anim-oferta" style="--anim-delay: 6.9;">
+                            <svg class="oferta-icone" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="22"
+                                height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" />
+                                <path d="m9 12 2 2 4-4" />
+                            </svg>
+                            <span>Ingresso em todos acampamentos</span>
+                        </li>
+                        <li class="anim-oferta" style="--anim-delay: 7.5;">
+                            <svg class="oferta-icone" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="22"
+                                height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" />
+                                <path d="m9 12 2 2 4-4" />
+                            </svg>
+                            <span>Séries atuais e futuras</span>
+                        </li>
+                        <li class="anim-oferta" style="--anim-delay: 8.1;">
+                            <svg class="oferta-icone" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="22"
+                                height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" />
+                                <path d="m9 12 2 2 4-4" />
+                            </svg>
+                            <span>Mini-cursos e palestras</span>
+                        </li>
+                        <li class="anim-oferta" style="--anim-delay: 8.7;">
+                            <svg class="oferta-icone" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="22"
+                                height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" />
+                                <path d="m9 12 2 2 4-4" />
+                            </svg>
+                            <span>Cadernos, templates e resumos</span>
+                        </li>
+                        <li class="anim-oferta" style="--anim-delay: 9.3;">
+                            <svg class="oferta-icone" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="22"
+                                height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" />
+                                <path d="m9 12 2 2 4-4" />
+                            </svg>
+                            <span>Benedito e Marquito, as IAs</span>
+                        </li>
                     </ul>
+
+                    <div class="oferta-rodape">
+                        <div class="oferta-preco anim-oferta" style="--anim-delay: 10;">
+                            <div class="oferta-preco-linha">
+                                <span class="oferta-parcelas"><span class="var-parcelas">12</span>x de</span>
+                                <span class="oferta-valor-parcela">R$<span class="var-valor-parcela">59,70</span></span>
+                            </div>
+                        </div>
+
+                        <div class="oferta-avista anim-oferta" style="--anim-delay: 10.8;">
+                            ou R$597 à vista
+                        </div>
+
+                        <div class="oferta-barra anim-oferta" style="--anim-delay: 12.4;">
+                            <div class="fundadores-bar-container barra-oferta" role="progressbar" aria-valuemin="0"
+                                aria-valuemax="100" aria-valuenow="0" aria-label="Vagas de membro fundador preenchidas">
+                                <div class="fundadores-track">
+                                    <div class="fundadores-fill"></div>
+                                </div>
+                            </div>
+                            <div class="fundadores-rotulos">
+                                <span class="fundadores-texto-esq"><span class="fundadores-percentual-bold"></span>% das
+                                    vagas preenchidas</span>
+                                <span class="fundadores-texto-dir">Restam <span
+                                        class="fundadores-restantes"></span></span>
+                            </div>
+                            <p class="oferta-barra-texto">Depois da vaga <span class="fundadores-total"></span>, o valor
+                                sobe.</p>
+                        </div>
+
+                        <a href="[LINK_DO_CHECKOUT]" class="btn-principal btn-oferta var-link-checkout anim-oferta"
+                            style="--anim-delay: 13.2;">
+                            Quero ser membro fundador
+                            <span class="btn-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M5 12h14"></path>
+                                    <path d="m12 5 7 7-7 7"></path>
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
                 </div>
-                <div>
-                    <h3 class="serif" style="color: #A05252;">A escola NÃO é para você se:</h3>
-                    <ul>
-                        <li>Quer técnica de motivação rápida para se sentir bem por três dias.</li>
-                        <li>Quer título acadêmico ou discussão para impressionar em mesa de bar.</li>
-                        <li>Não pretende praticar nada. Ler bonito não muda ninguém.</li>
-                    </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==============================================
+         12. GARANTIA SECTION
+         ============================================== -->
+    <section class="garantia-sec" id="garantia">
+        <div class="ruido" style="opacity: 0.05; z-index: 0;"></div>
+        <div class="container garantia-container">
+            <div class="garantia-grid-linha1">
+                <!-- Coluna Esquerda: Texto -->
+                <div class="garantia-texto-esq">
+                    <p class="garantia-numero-bloco anim-garantia">
+                        <span class="garantia-numero var-dias-garantia">15</span>
+                        <span class="garantia-dias-texto">dias de garantia</span>
+                    </p>
+                    <h2 class="garantia-h2 anim-garantia">
+                        O risco <em>não é seu</em>
+                    </h2>
+                    <p class="garantia-abertura anim-garantia">
+                        Você pode acessar a escola durante <span class="var-dias-garantia">15</span> dias. Se não
+                        gostar, peça o
+                        reembolso e eu devolvo o seu dinheiro. A nossa taxa de reembolso é menor que 1%.
+                    </p>
                 </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- 12. POR DENTRO -->
-    <section id="por-dentro">
-        <div class="container">
-            <h2>O que você vai viver lá dentro</h2>
-            
-            <div class="highlight-box text-left">
-                <h4 class="serif">Não sabe mais o que te interessa na vida?</h4>
-                <p>Nas aulas de filosofia clássica você recebe as perguntas de Sócrates. Elas acendem de volta a curiosidade pela sua existência.</p>
-                
-                <h4 class="serif mt-4">Gasta o dia inteiro brigando com o que não controla?</h4>
-                <p>No estoicismo você aprende o corte de Marco Aurélio, e para de perder energia com o que não está na sua mão.</p>
-                
-                <h4 class="serif mt-4">Já espera sempre o pior antes de acontecer?</h4>
-                <p>No existencialismo você entende por que a sua história não está escrita. Devolve a esperança e vontade de fazer plano.</p>
-                
-                <h4 class="serif mt-4">Os dias estão todos com a mesma cor?</h4>
-                <p>Na filosofia contemporânea você vê sobre pressa e cansaço. E volta a reparar na beleza do caminho.</p>
-            </div>
+                <!-- Coluna Direita: Cards -->
+                <div class="garantia-cards-dir">
 
-            <p class="text-center"><strong>E ainda:</strong> O Raio X do Propósito, Caderno Guia Refinador de Princípios, encontros ao vivo e calendário anual.</p>
-            <img src="guia_remake.png" alt="Mockup Caderno" class="img-fluid">
-        </div>
-    </section>
+                    <div class="garantia-card card-lei anim-garantia">
+                        <div class="garantia-card-header">
+                            <svg class="lucide lucide-shield-check" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2-1 4-2 7-2 2.15 0 4.2.91 6.3 1.94a.9.9 0 0 1 .7.85Z" />
+                                <path d="m9 12 2 2 4-4" />
+                            </svg>
+                            <span class="garantia-tag tag-lei">Até o <span class="var-dias-garantia-lei">15</span>º
+                                dia</span>
+                        </div>
+                        <h3>Garantia Incondicional: <span class="var-dias-garantia-lei">15</span> dias, sem pergunta
+                            nenhuma</h3>
+                        <p>Entrou, não gostou, pediu de volta. Sem precisar justificar nada.</p>
+                    </div>
 
-    <!-- 13. PROVA SOCIAL -->
-    <section id="prova-social">
-        <div class="container text-center">
-            <h2>Quem já caminha comigo</h2>
-            <p>Mais de 80.000 pessoas já passaram pelas palestras. Milhares leem as Sementes Matinais.</p>
-            
-            <div class="social-proof-grid" style="grid-template-columns: repeat(2, 1fr);">
-                <!-- Prints de placeholder -->
-                <div class="print-mockup">"O Raio X do Propósito foi um soco no estômago, mas daquele jeito que a gente precisava pra acordar." <div class="print-author">- Aluna da Turma 1</div></div>
-                <div class="print-mockup">"Pela primeira vez em anos eu me peguei olhando o pôr do sol sem pensar nos boletos." <div class="print-author">- Aluno do Marco Aurélio</div></div>
-                <div class="print-mockup">"As aulas ao vivo são um abraço na alma. Que comunidade!" <div class="print-author">- Membro da Comunidade</div></div>
-                <div class="print-mockup">"Parei de tentar otimizar meu descanso, Rafa. Foi libertador." <div class="print-author">- Participante</div></div>
-                <div class="print-mockup print-full-width">"Que aula impactante!!!!! Maravilhosa!!!! Chorei em vários trechos do vídeo! Muito feliz comigo mesma por ter dito sim a este curso! Sou grata por seu modo de ensinar, simples e profundo ao mesmo tempo, professor Rafa Barbosa!" <div class="print-author">- Fabia Moraes Barreto</div></div>
-            </div>
-        </div>
-    </section>
+                    <!-- Conector -->
+                    <div class="garantia-conector anim-garantia" aria-hidden="true" style="--anim-delay: 1.4;">+</div>
 
-    <!-- 14. BÔNUS -->
-    <section id="bonus">
-        <div class="container">
-            <h2>Quem entra na primeira turma leva mais 4 coisas</h2>
-            
-            <div class="highlight-box text-left">
-                <h4 class="serif">BÔNUS 1: Todas as minhas séries e leituras guiadas (valor R$399)</h4>
-                <p>Você leva as que já existem (como 'Um Dia Com Marco Aurélio') e <strong>todas as que eu lançar daqui para frente, sem pagar nada a mais.</strong> A próxima é o Expresso Filosofia.</p>
-                <img src="Mocku - Séries.png" alt="Capas das Séries" class="img-fluid" style="margin: 10px 0;">
-
-                <h4 class="serif mt-4">BÔNUS 2: Acervo das Sementes Matinais (valor R$197)</h4>
-                <p>As melhores sementes gravadas no WhatsApp, organizadas por tema, para você achar a reflexão certa na hora certa.</p>
-                <img src="Sementes.png" alt="Sementes Matinais" class="img-fluid" style="margin: 10px 0;">
-
-                <h4 class="serif mt-4">BÔNUS 3: Benedito, seu guia filosófico 24 horas (valor R$99)</h4>
-                <p>Uma inteligência artificial treinada com todo o nosso conteúdo. Você pergunta a qualquer hora, às 3 da manhã, e ele responde.</p>
-                <img src="Benedito.png" alt="Benedito IA" class="img-fluid" style="margin: 10px 0;">
-
-                <h4 class="serif mt-4">BÔNUS 4: Comunidade e lives com convidados (valor R$597)</h4>
-                <p>Escola sem pátio não é escola. Grupo de alunos e lives com amigos da filosofia e psicologia.</p>
-                <img src="Comunidade.png" alt="Comunidade e Aulas" class="img-fluid" style="margin: 10px 0;">
-            </div>
-        </div>
-    </section>
-
-    <!-- 15. EMPILHAMENTO -->
-    <section id="preco">
-        <div class="container text-center">
-            <h2>Tudo que você recebe hoje</h2>
-            
-            <table class="price-table" style="max-width: 600px; margin: 30px auto;">
-                <tr><td>Escola Natureza Filosófica (1 ano)</td><td>R$997</td></tr>
-                <tr><td>Bônus 1: Séries e leituras guiadas</td><td>R$399</td></tr>
-                <tr><td>Bônus 2: Acervo Sementes Matinais</td><td>R$197</td></tr>
-                <tr><td>Bônus 3: Benedito, guia 24h</td><td>R$99</td></tr>
-                <tr><td>Bônus 4: Comunidade e lives</td><td>R$597</td></tr>
-                <tr class="total"><td><strong>VALOR TOTAL</strong></td><td style="text-decoration: line-through; color: var(--text-light);">R$2.089</td></tr>
-            </table>
-
-            <p style="font-size: 1.2rem; margin-top: 40px;">Hoje você leva tudo por</p>
-            <h1 style="color: var(--gold-dark); font-size: 3.5rem; margin-bottom: 10px;">12x de R$59,70</h1>
-            <p>ou R$597 à vista</p>
-            
-            <p class="mt-4" style="font-size: 1.2rem;">São R$59,70 por mês. O preço de uma pizza.<br>
-            <strong>Uma pizza por mês para você parar de só administrar os seus dias.</strong></p>
-
-            <div class="btn-cta-wrapper">
-                <a href="https://pay.hotmart.com/E106651725U?off=x8sw7f6b" class="btn-cta">Sim, quero me sentir vivo de novo</a>
-                <span class="btn-subtitle">12x de R$59,70 | Acesso imediato | Garantia dupla</span>
-            </div>
-
-            <div class="social-proof-grid" style="grid-template-columns: 1fr; max-width: 500px; margin: 0 auto;">
-                <div class="print-mockup">"O melhor investimento que fiz no meu autoconhecimento. Vale cada centavo." <div class="print-author">- Aluno Satisfeito</div></div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 16. AUTORIDADE -->
-    <section id="autoridade">
-        <div class="container text-center">
-            <h2>Quem vai te guiar</h2>
-            <img src="image.png" alt="Rafa no Palco" class="img-fluid" style="border-radius: 50%; width: 250px; height: 250px; object-fit: cover;">
-            <h3 class="serif mt-4" style="color: var(--text-main);">Rafa Barbosa</h3>
-            <p>Engenheiro de formação, filósofo por escolha.</p>
-            <p>Mais de 80.000 pessoas já assistiram minhas palestras presenciais pelo Brasil. Rádios, TVs e podcasts começaram a me chamar de a nova voz da filosofia no Brasil.</p>
-            <p>Já levei filosofia para milhares de alunos em "Um Dia Com Marco Aurélio" e na leitura guiada de Meditações. E todo dia de manhã eu falo com a nossa comunidade nas Sementes Matinais.</p>
-        </div>
-    </section>
-
-    <!-- 17. GARANTIA -->
-    <section id="garantia">
-        <div class="container text-center">
-            <h2>O risco não é seu</h2>
-            <div class="highlight-box text-left">
-                <p>Todo produto digital no Brasil é obrigado por lei a dar 7 dias de garantia. Isso não é bondade de ninguém.</p>
-                <p>Por isso eu vou além.</p>
-                
-                <h4 class="serif mt-4">Garantia 1: 7 dias, sem pergunta nenhuma.</h4>
-                <p>Entrou, não gostou, pediu de volta. Sem precisar justificar nada.</p>
-                
-                <h4 class="serif mt-4">Garantia 2: 15 dias de garantia estendida.</h4>
-                <p>Participe dos encontros ao vivo, faça o Raio X e o primeiro exercício. Se ainda assim sentir que não é para você, me escreve. Eu devolvo cada centavo.</p>
-                
-                <p class="text-center mt-4"><strong>Eu quero você aqui dentro porque você quer estar.</strong></p>
-                <div class="text-center mt-4">
-                    <img src="Garantia.png" alt="Selo de Garantia" class="img-fluid" style="max-width: 250px; box-shadow: none;">
+                    <div class="garantia-card card-ext anim-garantia" style="--anim-delay: 1.4;">
+                        <div class="garantia-card-header">
+                            <svg class="lucide lucide-shield-plus" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2-1 4-2 7-2 2.15 0 4.2.91 6.3 1.94a.9.9 0 0 1 .7.85Z" />
+                                <path d="M9 12h6" />
+                                <path d="M12 9v6" />
+                            </svg>
+                            <span class="garantia-tag tag-ext">Por 1 ano</span>
+                        </div>
+                        <h3>Garantia Condicional: 1 ano de garantia</h3>
+                        <p>Por confiar no produto, eu dou uma segunda garantia. Assista a todo o conteúdo e participe de
+                            todas as aulas ao vivo. Se, mesmo assim, você sentir que o que eu ensinei não agregou nada
+                            na sua vida, que não saiu do piloto automático e não conseguiu aplicar a filosofia no seu
+                            dia a dia, eu devolvo cada centavo. Você não perde nenhum real.</p>
+                    </div>
                 </div>
             </div>
 
-            <div class="btn-cta-wrapper">
-                <a href="https://pay.hotmart.com/E106651725U?off=x8sw7f6b" class="btn-cta">Quero entrar sem risco</a>
-                <span class="btn-subtitle">12x de R$59,70 | Garantia dupla</span>
+            <div class="garantia-grid-linha2">
+                <div class="garantia-frase-col anim-garantia">
+                    <p class="garantia-frase">
+                        Eu quero você aqui dentro <em>porque você quer estar.</em>
+                    </p>
+                </div>
+                <div class="garantia-botao-col anim-garantia" style="--anim-delay: 1;">
+                    <a href="[LINK_DO_CHECKOUT]" class="btn-principal btn-garantia var-link-checkout">
+                        Quero entrar sem risco
+                    </a>
+                    <p class="garantia-microtexto">
+                        <span class="var-parcelas">12</span>x de R$<span class="var-valor-parcela">59,70</span> <span
+                            class="garantia-sep">|</span> Garantia de 1 ano
+                    </p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- 18. FAQ -->
-    <section id="faq">
-        <div class="container">
-            <h2 class="text-center">Dúvidas Frequentes</h2>
+    <!-- ==============================================
+         13. FAQ SECTION
+         ============================================== -->
+    <section class="faq-sec" id="faq">
+        <div class="faq-divider"></div>
+        <div class="ruido" style="opacity: 0.05; z-index: 0;"></div>
+        <div class="container faq-container">
+            <h2 class="faq-h2 anim-faq">Perguntas frequentes</h2>
             
-            <div class="faq-item">
-                <div class="faq-question">Nunca estudei filosofia. Consigo acompanhar?</div>
-                <div class="faq-answer">Consegue. A escola foi montada para quem começa do zero. Sem livro difícil e sem palavra complicada.</div>
-            </div>
-            
-            <div class="faq-item">
-                <div class="faq-question">Quando começa?</div>
-                <div class="faq-answer">Imediatamente. A aula inaugural acontece nesta semana e você já entra com o conteúdo liberado.</div>
-            </div>
-            
-            <div class="faq-item">
-                <div class="faq-question">Quais dias são as aulas ao vivo?</div>
-                <div class="faq-answer">Terça ou quarta à noite. O horário é ajustado ao que ficar melhor para a turma.</div>
-            </div>
-            
-            <div class="faq-item">
-                <div class="faq-question">Vou receber as séries que você lançar depois?</div>
-                <div class="faq-answer">Sim. Todas as próximas séries e leituras guiadas entram para você sem custo nenhum.</div>
-            </div>
+            <ul class="faq-list">
+                <li class="faq-item anim-faq" style="--anim-delay: 1;">
+                    <button class="faq-btn" aria-expanded="false" aria-controls="faq-painel-1" id="faq-btn-1">
+                        <span class="faq-pergunta">
+                            <span class="faq-num">1 |</span> Nunca estudei filosofia. Consigo acompanhar?
+                        </span>
+                        <svg class="lucide lucide-chevron-down faq-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+                    </button>
+                    <div class="faq-panel-wrapper">
+                        <div class="faq-panel" id="faq-painel-1" role="region" aria-labelledby="faq-btn-1">
+                            <p>Consegue. A escola foi montada para quem começa do zero, sem livro difícil e sem palavra complicada. Eu explico com exemplos do dia a dia, e você pode perguntar na hora, ao vivo.</p>
+                        </div>
+                    </div>
+                </li>
+                
+                <li class="faq-item anim-faq" style="--anim-delay: 2;">
+                    <button class="faq-btn" aria-expanded="false" aria-controls="faq-painel-2" id="faq-btn-2">
+                        <span class="faq-pergunta">
+                            <span class="faq-num">2 |</span> Como funcionam as aulas ao vivo?
+                        </span>
+                        <svg class="lucide lucide-chevron-down faq-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+                    </button>
+                    <div class="faq-panel-wrapper">
+                        <div class="faq-panel" id="faq-painel-2" role="region" aria-labelledby="faq-btn-2">
+                            <p>Toda semana eu entro ao vivo com a turma, na terça ou na quarta à noite. Você pergunta, conta o que está vivendo e leva a filosofia para a sua semana. O horário é ajustado ao que ficar melhor para a turma.</p>
+                        </div>
+                    </div>
+                </li>
 
-            <div class="faq-item">
-                <div class="faq-question">Por quanto tempo eu tenho acesso?</div>
-                <div class="faq-answer">Um ano completo.</div>
-            </div>
+                <li class="faq-item anim-faq" style="--anim-delay: 3;">
+                    <button class="faq-btn" aria-expanded="false" aria-controls="faq-painel-3" id="faq-btn-3">
+                        <span class="faq-pergunta">
+                            <span class="faq-num">3 |</span> E se eu não puder assistir ao vivo?
+                        </span>
+                        <svg class="lucide lucide-chevron-down faq-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+                    </button>
+                    <div class="faq-panel-wrapper">
+                        <div class="faq-panel" id="faq-painel-3" role="region" aria-labelledby="faq-btn-3">
+                            <p>Todos os encontros ficam gravados, e você assiste no seu tempo. Ninguém fica de fora por causa de horário: a gente marca reposição e ajusta o dia conforme a turma. O caderno de prática você faz quando quiser, sem prazo correndo atrás de você.</p>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="faq-item anim-faq" style="--anim-delay: 4;">
+                    <button class="faq-btn" aria-expanded="false" aria-controls="faq-painel-4" id="faq-btn-4">
+                        <span class="faq-pergunta">
+                            <span class="faq-num">4 |</span> Como recebo o acesso e quando começo?
+                        </span>
+                        <svg class="lucide lucide-chevron-down faq-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+                    </button>
+                    <div class="faq-panel-wrapper">
+                        <div class="faq-panel" id="faq-painel-4" role="region" aria-labelledby="faq-btn-4">
+                            <p>Começa imediatamente. Assim que a compra for aprovada, você recebe o acesso por e-mail, com o mesmo e-mail da compra, e o link do grupo da Ágora no WhatsApp. Você já entra com o conteúdo liberado e participa da próxima aula ao vivo.</p>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="faq-item anim-faq" style="--anim-delay: 5;">
+                    <button class="faq-btn" aria-expanded="false" aria-controls="faq-painel-5" id="faq-btn-5">
+                        <span class="faq-pergunta">
+                            <span class="faq-num">5 |</span> Por quanto tempo terei acesso?
+                        </span>
+                        <svg class="lucide lucide-chevron-down faq-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+                    </button>
+                    <div class="faq-panel-wrapper">
+                        <div class="faq-panel" id="faq-painel-5" role="region" aria-labelledby="faq-btn-5">
+                            <p>Você terá um ano completo de acesso a todo o conteúdo. Nesse período, as séries que eu lançar entram para você sem custo nenhum.</p>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="faq-item anim-faq" style="--anim-delay: 6;">
+                    <button class="faq-btn" aria-expanded="false" aria-controls="faq-painel-6" id="faq-btn-6">
+                        <span class="faq-pergunta">
+                            <span class="faq-num">6 |</span> Como funciona o valor de membro fundador?
+                        </span>
+                        <svg class="lucide lucide-chevron-down faq-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+                    </button>
+                    <div class="faq-panel-wrapper">
+                        <div class="faq-panel" id="faq-painel-6" role="region" aria-labelledby="faq-btn-6">
+                            <p>Os <span class="fundadores-total">100</span> primeiros entram com o valor de lançamento: <span class="var-parcelas">12</span>x de R$<span class="var-valor-parcela">59,70</span> ou R$<span class="var-preco-avista">597</span> à vista. Quando a turma chegar em <span class="fundadores-total">100</span>, o valor sobe.</p>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="faq-item anim-faq" style="--anim-delay: 7;">
+                    <button class="faq-btn" aria-expanded="false" aria-controls="faq-painel-7" id="faq-btn-7">
+                        <span class="faq-pergunta">
+                            <span class="faq-num">7 |</span> E se eu entrar e não for para mim?
+                        </span>
+                        <svg class="lucide lucide-chevron-down faq-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+                    </button>
+                    <div class="faq-panel-wrapper">
+                        <div class="faq-panel" id="faq-painel-7" role="region" aria-labelledby="faq-btn-7">
+                            <p>Você tem duas garantias. A primeira é de <span class="var-dias-garantia">15</span> dias: entre, participe dos encontros e, se não gostar, peça o reembolso, sem precisar justificar nada. A segunda é de <span class="var-anos-garantia-2">1</span> ano: se você assistir a todo o conteúdo e participar de todas as aulas ao vivo e, mesmo assim, sentir que não agregou nada na sua vida, eu devolvo cada centavo.</p>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="faq-item anim-faq" style="--anim-delay: 8;">
+                    <button class="faq-btn" aria-expanded="false" aria-controls="faq-painel-8" id="faq-btn-8">
+                        <span class="faq-pergunta">
+                            <span class="faq-num">8 |</span> O Benedito e o Marquito são pessoas de verdade?
+                        </span>
+                        <svg class="lucide lucide-chevron-down faq-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+                    </button>
+                    <div class="faq-panel-wrapper">
+                        <div class="faq-panel" id="faq-painel-8" role="region" aria-labelledby="faq-btn-8">
+                            <p>Não. São inteligências artificiais, disponíveis a qualquer hora. O Benedito é treinado com todo o meu conteúdo. O Marquito é treinado com o conteúdo de Marco Aurélio, para você conversar com as ideias dele.</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
         </div>
     </section>
 
-    <!-- 19. WHATSAPP e 20. FECHAMENTO -->
-    <section id="fechamento">
-        <div class="container text-center">
-            
-            <div style="margin-bottom: 60px;">
-                <p><strong>Sua dúvida não está aqui? Fala com a gente no WhatsApp.</strong></p>
-                <a href="https://wa.me/5511939454468" target="_blank" class="btn-cta" style="background: #25D366; color: white; padding: 15px 30px; font-size: 1rem;">Falar com o Suporte</a>
+    <!-- ==============================================
+         14. FINAL / WHATSAPP / FOOTER
+         ============================================== -->
+    <section class="final-sec" id="final">
+        <div class="final-divider"></div>
+        <div class="ruido" style="opacity: 0.05; z-index: 0;"></div>
+        
+        <div class="container final-container">
+            <!-- Título -->
+            <h2 class="final-h2 anim-final" style="--anim-delay: 0;">
+                Você já passou tempo demais fazendo a vida funcionar. <em>Está na hora de voltar a vivê-la.</em>
+            </h2>
+
+            <!-- Dois caminhos -->
+            <ul class="final-caminhos">
+                <li class="anim-final" style="--anim-delay: 2.14;">
+                    <svg class="lucide lucide-circle-x" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#65422F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m15 9-6 6"/><path d="m9 9 6 6"/></svg>
+                    <span><strong>Caminho 1:</strong> fechar esta página e repetir os próximos meses.</span>
+                </li>
+                <li class="anim-final" style="--anim-delay: 3.85;">
+                    <svg class="lucide lucide-circle-check" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#B85A20" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+                    <span><strong>Caminho 2:</strong> entrar hoje para reconhecer, redescobrir e reprogramar.</span>
+                </li>
+            </ul>
+
+            <!-- Botão de compra e microtexto -->
+            <div class="final-cta anim-final" style="--anim-delay: 5.71;">
+                <a href="[LINK_DO_CHECKOUT]" class="btn-principal var-link-checkout">
+                    Quero ser membro fundador
+                </a>
             </div>
-
-            <div class="divider"></div>
-
-            <h2>Agora a decisão é sua</h2>
-            <p>Você tem dois caminhos daqui.</p>
-            <p>O primeiro é fechar essa página e voltar para a rotina. Continuar tentando organizar melhor aquilo que não é problema de organização. E correr o risco de os próximos meses serem a repetição exata dos anteriores.</p>
-            <p>O segundo é entrar hoje.</p>
-            <p>Reconhecer as lentes que governam a sua vida. Redescobrir novas formas de olhar. Reprogramar o que a vida administrada apagou.</p>
-            
-            <div class="highlight-box">
-                <h3 class="serif" style="color: var(--text-main); font-size: 1.8rem;">Você já passou tempo demais fazendo a vida funcionar.</h3>
-                <p>Está na hora de voltar a vivê-la.</p>
-            </div>
-
-            <h1 style="color: var(--gold-dark); font-size: 3.5rem; margin-top: 40px; margin-bottom: 10px;">12x de R$59,70</h1>
-            <p>ou R$597 à vista</p>
-            
-            
-
-            <div class="btn-cta-wrapper">
-                <a href="https://pay.hotmart.com/E106651725U?off=x8sw7f6b" class="btn-cta">Quero entrar na primeira turma</a>
-                <span class="btn-subtitle">12x de R$59,70 | Acesso imediato | Garantia dupla</span>
-            </div>
-
-            <p style="font-family: 'Playfair Display', serif; font-size: 1.5rem; font-style: italic; color: var(--gold-dark); margin-top: 60px;">
-                Se apaixone pela vida.<br>
-                Porque vida sem paixão é um desperdício grande demais.
+            <p class="final-microtexto anim-final" style="--anim-delay: 7.42;">
+                <span class="var-parcelas">12</span>x de R$<span class="var-valor-parcela">59,70</span> <span class="final-sep">|</span> Garantia dupla <span class="final-sep">|</span> Restam <span class="var-vagas-restantes">40</span> vagas de fundador
             </p>
+
+            <!-- Card do WhatsApp -->
+            <div class="whats-card anim-final" style="--anim-delay: 0;">
+                <div class="whats-content">
+                    <h3>Ainda em dúvida se a escola é para você? Fale comigo direto!</h3>
+                    <p>Eu mesmo vou te responder pessoalmente :)</p>
+                    <a href="#" class="btn-whats var-link-whatsapp" target="_blank" rel="noopener noreferrer">
+                        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.888-.788-1.487-1.761-1.66-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+                        Chamar no WhatsApp
+                    </a>
+                </div>
+                <div class="whats-icon-col">
+                    <a href="#" class="whats-logo-link var-link-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Falar com o Rafa no WhatsApp">
+                        <img src="./oficial/assets/WhatsApp.webp" alt="Logo WhatsApp" width="96" height="96" loading="lazy">
+                    </a>
+                </div>
+            </div>
+
+            <!-- Assinatura -->
+            <div class="final-assinatura anim-final" style="--anim-delay: 0;">
+                <p class="final-ass-p1">Se apaixone pela vida.</p>
+                <p class="final-ass-p2">Porque vida sem paixão é um desperdício grande demais.</p>
+            </div>
+            
+            <!-- Rodapé -->
+            <footer class="footer-sec">
+                <div class="footer-divider"></div>
+                <div class="footer-logo">
+                    <span class="footer-logo-texto">Escola Natureza Filosófica</span>
+                </div>
+                <p class="footer-copy">Escola Natureza Filosófica | Todos os direitos reservados</p>
+            </footer>
         </div>
     </section>
 
-    
+    <script src="./oficial/script.js"></script>
 </body>
+
 </html>
