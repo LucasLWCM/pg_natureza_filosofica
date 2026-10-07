@@ -1,0 +1,994 @@
+/* Custom styles para a pÃ¡gina Live */
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
+
+.hero-lives {
+    padding-top: 24px;
+    padding-bottom: clamp(24px, 4vh, 40px); /* Padding de 24px proporcional Ã  tela */
+    background-color: var(--branco-quente);
+    color: var(--preto);
+    overflow: hidden;
+    min-height: 88svh; /* Garante que 12% da tela seja ocupada pela dobra 2 */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.hero-lives-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding: 0 16px;
+    max-width: 420px;
+    margin: 0 auto;
+}
+
+.lives-header {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.logo-texto {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    letter-spacing: 0.04em;
+    transform: scaleX(1.15); /* Estica levemente a fonte para imitar a referÃªncia */
+    text-transform: uppercase;
+    color: var(--preto);
+    margin-bottom: 12px;
+}
+
+.divisor-header {
+    border: none;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    width: 100%;
+}
+
+.estatistica {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 32px;
+    font-family: 'Courier New', Courier, monospace;
+    color: var(--preto);
+    text-align: left;
+}
+
+.estatistica-col:first-child {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.estatistica-col:last-child {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.estatistica-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.numero-destaque {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    color: var(--preto);
+    line-height: 1.5;
+    margin: 0 4px;
+}
+
+.titulo-principal {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 1.05;
+    color: var(--preto);
+    text-transform: uppercase;
+    margin: 0 auto 24px;
+    max-width: 360px;
+    letter-spacing: -0.02em;
+}
+
+.circulo-laranja {
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+    padding: 0 2px;
+}
+
+/* Aspecto de cÃ­rculo orgÃ¢nico desenhado Ã  mÃ£o mais fiel */
+.circulo-laranja::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-1deg);
+    width: 108%;
+    height: 120%;
+    border: 2px solid var(--laranja);
+    /* Formato oval irregular em vez de caixa */
+    border-radius: 60% 40% 70% 30% / 40% 50% 60% 50%;
+    z-index: -1;
+}
+
+.subtitulo-lives {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--preto);
+    width: 90%;
+    max-width: 480px;
+    margin: 0 auto 40px;
+}
+
+.cta-wrapper {
+    position: relative;
+    width: 90%;
+    max-width: 420px;
+    margin: 0 auto 64px;
+}
+
+.btn-lives {
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    font-size: 18px;
+    line-height: 1.1;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    border-radius: 4px; /* Cantos menos arredondados, quase quadrados como na ref */
+    background: linear-gradient(90deg, var(--laranja), var(--laranja-queimado));
+    box-shadow: none; /* Sem sombra na referÃªncia */
+    color: var(--preto) !important;
+    height: 56px !important;
+    min-height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-decoration: none;
+}
+
+.btn-lives:hover {
+    filter: brightness(1.1);
+}
+
+.de-graca {
+    position: absolute;
+    bottom: -32px;
+    left: 50%;
+    transform: translateX(-50%) rotate(-3deg);
+    font-family: 'Caveat', cursive;
+    font-size: 36px;
+    line-height: 0.9;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.45);
+    white-space: nowrap;
+}
+
+/* Ãrea do VÃ­deo Mockup com as tags */
+.video-mockup {
+    width: 100%;
+    max-width: 230px; /* Reduzido de 280px para ficar com a proporÃ§Ã£o menor da referÃªncia */
+    position: relative;
+    margin: 32px auto 0;
+}
+
+.video-img-wrapper {
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    background-color: var(--preto);
+    aspect-ratio: 470 / 518; /* Mais alto do que largo, como na referÃªncia */
+    box-shadow: 0 16px 32px rgba(0,0,0,0.15);
+}
+
+.video-placeholder-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Elementos flutuantes sobre o vÃ­deo */
+.perfil-video {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    right: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.perfil-foto {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    background-color: var(--laranja);
+    object-fit: cover; /* Garante que a foto do Rafa nÃ£o distorÃ§a */
+}
+
+.perfil-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+}
+
+.perfil-nome {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 11.36px;
+    color: var(--branco-quente);
+    line-height: 1.3;
+}
+
+.perfil-subs {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.6);
+    margin-top: 3px;
+    line-height: 1.3;
+}
+
+/* Tags flutuantes */
+.tag-flutuante {
+    position: absolute;
+    background-color: #79665A; /* Cor sÃ³lida marrom acinzentado opaco para alto contraste */
+    color: var(--branco-quente);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 1.5;
+    padding: 8px 16px;
+    border-radius: 2px; /* Cantos quadrados como na ref */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Sombra forte para destacar do fundo */
+    z-index: 10;
+}
+
+/* Posicionamento mais vazado para fora do vÃ­deo */
+.tag-criativos { top: 35%; left: -36px; }
+.tag-paginas { top: 55%; left: -24px; }
+.tag-copys { top: 35%; right: -36px; }
+.tag-debriefings { top: 55%; right: -24px; }
+
+/* Barra de progresso do vÃ­deo */
+.barra-video {
+    position: absolute;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    height: 32px; /* Barra mais gordinha */
+    background: rgba(0, 0, 0, 0.85); /* Fundo bem mais escuro para contraste */
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    z-index: 10;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.trilha-progresso {
+    width: 100%;
+    height: 4px;
+    background-color: rgba(255, 255, 255, 0.25);
+    border-radius: 2px;
+    position: relative;
+}
+
+.progresso-preenchido {
+    width: 45%;
+    height: 100%;
+    background-color: var(--laranja);
+    border-radius: 2px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.bola-progresso {
+    width: 14px;
+    height: 14px;
+    background-color: var(--laranja);
+    border-radius: 50%;
+    position: absolute;
+    right: -7px;
+    top: 50%;
+    transform: translateY(-50%);
+    box-shadow: 0 0 8px rgba(232, 117, 36, 0.8);
+}
+
+/* --- Ajustes Desktop --- */
+@media (min-width: 992px) {
+    .hero-lives {
+        min-height: 94svh; /* Aumentado para dar mais espaÃ§o, mas ainda revela a dobra 2 */
+        height: 94svh;
+        padding-top: 4vh;
+        padding-bottom: 6vh; /* Reduzido para nÃ£o espremer o conteÃºdo para cima */
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    .hero-lives-container {
+        max-width: 1300px; /* Mais largo para o respiro das laterais */
+        padding: 0 4vw; /* Respiro flexÃ­vel nas laterais */
+        margin: 0 auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .lives-header {
+        text-align: left;
+        margin-bottom: 3vh; /* Margem flexÃ­vel vertical */
+    }
+
+    .logo-texto {
+        font-size: clamp(32px, 3vw, 40px);
+        transform-origin: left;
+        margin-bottom: 0;
+    }
+
+    .divisor-header {
+        display: none;
+    }
+
+    .hero-columns {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 8vw; /* EspaÃ§o maior para empurrar texto pra esq e vÃ­deo pra dir */
+        width: 100%;
+    }
+
+    .hero-left {
+        flex: 0 1 55%; /* Ocupa atÃ© 55% da largura */
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        max-width: 680px;
+    }
+
+    .hero-right {
+        flex: 0 1 45%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .estatistica {
+        justify-content: flex-start;
+        font-size: clamp(12px, 1.2vw, 14px);
+        margin-bottom: 2vh;
+    }
+
+    .numero-destaque {
+        font-size: clamp(40px, 4vw, 64px);
+    }
+
+    .titulo-principal {
+        font-size: clamp(40px, 4vw, 56px); /* Um pouco menor conforme pedido */
+        max-width: 100%;
+        text-align: left;
+        margin: 0 0 3vh 0; /* Garante alinhamento Ã  esquerda removendo margin auto */
+        line-height: 1.05;
+    }
+
+    .subtitulo-lives {
+        font-size: clamp(14px, 1.5vw, 16px);
+        text-align: left;
+        max-width: 90%;
+        margin: 0 0 4vh 0; /* Garante alinhamento Ã  esquerda */
+        line-height: 1.5;
+    }
+
+    .cta-wrapper {
+        margin: 0;
+        width: clamp(280px, 25vw, 320px);
+        max-width: 100%;
+        align-self: flex-start;
+    }
+
+    .btn-lives {
+        font-size: clamp(16px, 1.8vw, 20px);
+        height: clamp(56px, 6vh, 64px) !important;
+        min-height: auto;
+    }
+
+    .de-graca {
+        bottom: -24px;
+        font-size: clamp(32px, 3.5vw, 48px);
+        left: 85%;
+    }
+
+    .video-mockup {
+        width: 100%;
+        max-width: clamp(320px, 35vw, 440px); /* Ajusta tamanho do vÃ­deo dependendo da tela */
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+    /* No desktop as tags ficam todas empilhadas do lado esquerdo do vÃ­deo */
+    .tag-criativos { top: 30%; left: -60px; right: auto; }
+    .tag-paginas { top: 45%; left: -60px; right: auto; }
+    .tag-copys { top: 60%; left: -60px; right: auto; }
+    .tag-debriefings { top: 75%; left: -60px; right: auto; }
+}
+
+/* --- Dobra 2: Por Que --- */
+.secao-porque {
+    background-color: var(--preto);
+    color: var(--branco-quente);
+    position: relative;
+    padding-top: 0; /* REMOVE O PADDING DE 72PX GLOBAL DO OFICIAL/STYLE.CSS */
+    padding-bottom: 96px;
+}
+
+/* Marquee */
+.faixa-marquee {
+    width: 100%;
+    background-color: #554D49; /* Fundo cinza/marrom da faixa */
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 12px 0;
+    position: relative;
+}
+
+.marquee-conteudo {
+    display: inline-block;
+    white-space: nowrap;
+    animation: marquee-esquerda-direita 40s linear infinite;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px; /* Aumentado conforme a referÃªncia */
+    font-weight: 700; /* Mais negrito (Bold) */
+    color: rgba(255, 255, 255, 0.8); /* Ajustado conforme a referÃªncia */
+}
+
+.marquee-conteudo span.ponto {
+    margin: 0 24px;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+@keyframes marquee-esquerda-direita {
+    0% { transform: translateX(-50%); }
+    100% { transform: translateX(0%); }
+}
+
+/* Layout da SeÃ§Ã£o */
+.porque-container {
+    display: flex;
+    flex-direction: column;
+    padding: 64px 16px; /* Restaurado o padding superior que eu tinha tirado */
+    max-width: 1040px;
+    margin: 0 auto;
+    gap: 48px;
+}
+
+@media (min-width: 992px) {
+    .porque-container {
+        flex-direction: row;
+        align-items: stretch; /* Stretch permite que a coluna esquerda acompanhe a altura da direita */
+        padding: 120px 16px; /* Restaurado padding superior */
+        gap: 64px;
+    }
+}
+
+.porque-esquerda {
+    flex: 1;
+    position: relative;
+}
+
+.sticky-wrapper {
+    position: sticky;
+    top: 160px; /* DistÃ¢ncia do topo da tela ao rolar */
+    text-align: center; /* Centralizado no mobile */
+}
+
+@media (min-width: 992px) {
+    .sticky-wrapper {
+        text-align: left; /* Volta Ã  esquerda no desktop */
+    }
+}
+
+.porque-sub {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    font-weight: 700; /* Mais destaque */
+    line-height: 1.5;
+    color: #ffffff !important; /* Branco puro forÃ§ado */
+    margin-bottom: 24px;
+}
+
+.porque-titulo {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: clamp(80px, 22vw, 140px); /* Extremamente maior */
+    color: var(--branco-quente);
+    line-height: 0.9;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+}
+
+.porque-direita {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+}
+
+@media (min-width: 992px) {
+    .porque-direita {
+        align-items: flex-end; /* No desktop os cards parecem alinhar Ã  direita ou ao centro */
+    }
+}
+
+.porque-card {
+    background-color: #554D49; /* Fundo cinza/marrom esverdeado da imagem */
+    border-radius: 16px;
+    padding: 32px;
+    width: 100%;
+    max-width: 360px; 
+    aspect-ratio: 1 / 1; /* Quadrados perfeitos */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.porque-card h3 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700; /* Mais impacto */
+    font-size: clamp(40px, 11vw, 48px); /* Muito maior */
+    line-height: 0.95;
+    color: var(--branco-quente);
+    text-transform: uppercase;
+    margin-bottom: 32px;
+    letter-spacing: 0.02em;
+}
+
+.porque-card p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px; /* Aumentado para melhor leitura */
+    line-height: 1.5;
+    color: #ffffff; /* Branco mais forte */
+}
+/* --- Dobra 3: Funciona pra quem? --- */
+.secao-funciona {
+    background-color: #EBEBEB;
+    color: #080808;
+    padding: 64px 0;
+}
+
+.funciona-container {
+    width: 100%;
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: 0 16px;
+    box-sizing: border-box;
+}
+
+.funciona-titulo {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: clamp(64px, 15vw, 94px);
+    line-height: 0.85;
+    text-transform: uppercase;
+    margin-bottom: 48px;
+    letter-spacing: -0.01em;
+    color: #080808;
+}
+
+.funciona-linha {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 32px 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.funciona-esquerda h3 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+    font-weight: 400;
+    color: #7F746F;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+.funciona-direita {
+    width: 100%;
+    box-sizing: border-box;
+    min-width: 0;
+}
+
+.tags-nichos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.nicho-tag {
+    background-color: #DFDFDF;
+    padding: 8px 14px;
+    border-radius: 8px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 13px;
+    font-weight: 600;
+    color: #282828;
+    white-space: nowrap;
+}
+
+.texto-mono {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    line-height: 1.8;
+    color: #080808;
+    font-weight: 600;
+    white-space: normal;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    min-width: 0;
+}
+
+.divisor-linha {
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.15);
+    width: 100%;
+}
+
+@media (min-width: 992px) {
+    .secao-funciona {
+        padding: 120px 0;
+    }
+
+    .funciona-titulo {
+        margin-bottom: 80px;
+    }
+
+    .funciona-linha {
+        display: grid;
+        grid-template-columns: 300px 1fr;
+        gap: 64px;
+        align-items: flex-start;
+        padding: 48px 0;
+    }
+
+    .funciona-esquerda h3 {
+        font-size: 32px;
+    }
+
+    .nicho-tag {
+        font-size: 14px;
+    }
+
+    .texto-mono {
+        font-size: 15px;
+        max-width: 600px;
+    }
+}
+
+/* --- Dobra 4: Pago vs Gratuito --- */
+.secao-comparacao {
+    background-color: #1A1A1A; /* Cor bem escura da referência */
+    color: #FFFFFF;
+    padding: 80px 0;
+}
+
+.comparacao-container {
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.comparacao-titulo {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: clamp(64px, 15vw, 120px);
+    line-height: 0.9;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 48px;
+    letter-spacing: -0.02em;
+}
+
+.x-vermelho {
+    color: #E62E2D; /* Vermelho vivo da referência */
+}
+
+.tabela-comparacao {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.linha-tabela {
+    display: grid;
+    /* No mobile a primeira coluna precisa de um pouco mais de espaço pra caber o texto */
+    grid-template-columns: 1.3fr 1fr 1fr;
+    align-items: stretch; /* Estica as células pra terem a mesma altura */
+    gap: 8px;
+}
+
+.celula-recurso {
+    font-family: 'Arial', sans-serif; /* Fonte limpa sem serifa para a 1a coluna */
+    font-size: clamp(12px, 3.3vw, 15px);
+    font-weight: 700;
+    line-height: 1.2;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    padding-right: 4px;
+}
+
+.celula-pago, .celula-gratuito {
+    text-align: center;
+    padding: 12px 4px;
+    border-radius: 6px;
+    font-family: 'Arial', sans-serif;
+    font-size: clamp(11px, 3.2vw, 14px);
+    font-weight: 700;
+    line-height: 1.2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cabecalho-tabela {
+    margin-bottom: 8px;
+}
+
+.cabecalho-tabela .celula-pago, 
+.cabecalho-tabela .celula-gratuito {
+    background-color: transparent;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    font-size: clamp(16px, 4vw, 20px);
+    color: #FFFFFF;
+}
+
+.item-destaque {
+    background-color: #F1EAD7; /* Cor bege claro / areia */
+    color: #1A1A1A;
+}
+
+.item-escuro {
+    background-color: #262626; /* Cinza escuro */
+    color: #F1EAD7; /* O texto escuro herda a cor bege do fundo claro */
+}
+
+/* Ajustes Desktop para Dobra 4 */
+@media (min-width: 992px) {
+    .secao-comparacao {
+        padding: 120px 0;
+    }
+    
+    .comparacao-titulo {
+        margin-bottom: 80px;
+    }
+
+    .tabela-comparacao {
+        gap: 16px;
+    }
+
+    .linha-tabela {
+        grid-template-columns: 200px 1fr 1fr;
+        gap: 24px;
+    }
+    
+    .celula-recurso {
+        font-size: 16px;
+        padding-right: 24px;
+    }
+
+    .celula-pago, .celula-gratuito {
+        padding: 24px 16px;
+        border-radius: 8px;
+        font-size: 16px;
+    }
+
+    .cabecalho-tabela .celula-pago, 
+    .cabecalho-tabela .celula-gratuito {
+        font-size: 24px;
+    }
+}
+
+
+/* --- Dobra 5: Autoridade --- */
+/* ==========================================================================
+   10. AUTORIDADE SECTION
+   ========================================================================== */
+.autoridade-sec {
+  background-color: #F5F1E8;
+  padding: 24px 16px 96px;
+  position: relative;
+}
+
+.autoridade-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.autoridade-foto-wrapper {
+  margin-bottom: 28px;
+  width: 100%;
+  order: -1;
+}
+
+.autoridade-foto {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 24px;
+}
+
+.autoridade-conteudo {
+  width: 100%;
+  margin: 0;
+}
+
+.autoridade-h2 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.1;
+  color: #080808;
+  text-align: center;
+  text-wrap: balance;
+  margin-bottom: 20px;
+}
+
+.autoridade-h2 em {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-style: italic;
+  color: var(--laranja-queimado);
+  white-space: nowrap;
+}
+
+.autoridade-historia {
+  display: flex;
+  flex-direction: column;
+}
+
+.autoridade-historia p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 1.6;
+  color: rgba(8, 8, 8, 0.85);
+  text-align: center;
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.autoridade-historia p:last-child {
+  margin-bottom: 0;
+}
+
+.autoridade-historia p strong {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #080808;
+}
+
+.autoridade-citacao {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 1.2;
+  color: #080808;
+  text-align: center;
+  margin: 28px 0;
+}
+
+.autoridade-fechamento {
+  margin-top: 32px;
+  text-align: center;
+}
+
+.autoridade-fechamento-linha1 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 1.15;
+  color: #080808;
+}
+
+.autoridade-fechamento-linha2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 28px;
+  line-height: 1.15;
+  color: var(--laranja-queimado);
+  margin-top: 8px;
+}
+
+/* Animations */
+.anim-autoridade {
+  opacity: 0;
+  filter: blur(14px);
+  transform: translateY(30px);
+  will-change: opacity, filter, transform;
+}
+
+.anim-autoridade.in-view {
+  animation: tudoReveal 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+
+/* --- Overrides da Dobra 5 para o Live (alinhamento esquerda) --- */
+.autoridade-sec {
+  background-color: #F5F1E8;
+  padding: 64px 16px;
+}
+
+.autoridade-container {
+  max-width: 1040px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.autoridade-h2 {
+  text-align: left;
+}
+
+.autoridade-historia p {
+  text-align: left;
+}
+
+.autoridade-citacao {
+  text-align: left;
+  border-left: 4px solid var(--laranja);
+  padding-left: 20px;
+  font-size: 22px;
+}
+
+.autoridade-fechamento {
+  text-align: left;
+}
+
+.autoridade-foto-wrapper {
+  order: 0;
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  .autoridade-container {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 80px;
+  }
+
+  .autoridade-conteudo {
+    flex: 1;
+  }
+
+  .autoridade-foto-wrapper {
+    flex: 0 0 360px;
+    order: 1;
+  }
+}
