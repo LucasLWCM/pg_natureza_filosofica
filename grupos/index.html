@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecionando para o Grupo - Natureza Filosófica</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../oficial/style.css">
+    <link rel="stylesheet" href="style.css">
+
+    
+    <!-- Facebook Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    
+    fbq('init', '2115550092258715');
+    fbq('init', '1566967544562221');
+    fbq('track', 'PageView');
+    fbq('trackCustom', 'Grupo');
+    </script>
+    <noscript>
+    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=2115550092258715&ev=PageView&noscript=1" />
+    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1566967544562221&ev=PageView&noscript=1" />
+    </noscript>
+    <!-- End Facebook Pixel Code -->
+</head>
+<body class="secao-clara page-grupos">
+    <div class="container grupos-container">
+        
+        <!-- Spinner Animado -->
+        <div class="spinner"></div>
+
+        <!-- Texto -->
+        <h1 class="grupos-titulo">Estamos procurando vaga nos grupos disponíveis...</h1>
+        
+        <!-- Fallback Wrapper (Aparece caso demore) -->
+        <div class="fallback-wrapper" id="fallback-btn" style="opacity: 0; visibility: hidden; transition: opacity 0.5s;">
+            <p class="grupos-sub">Se você não for redirecionado automaticamente, clique no botão abaixo:</p>
+            <a href="https://chat.whatsapp.com/IC39FtqwNQm5IECPTgDkRo" class="btn-principal btn-grupo">ENTRAR NO GRUPO AGORA</a>
+        </div>
+        
+    </div>
+
+    <script>
+        var linkGrupo = "https://chat.whatsapp.com/IC39FtqwNQm5IECPTgDkRo";
+        
+        setTimeout(function() {
+            // Mostra o botão de fallback
+            var fallback = document.getElementById('fallback-btn');
+            fallback.style.visibility = 'visible';
+            fallback.style.opacity = '1';
+            
+            // Redireciona para o grupo do WhatsApp
+            window.location.href = linkGrupo;
+        }, 2000); // Aguarda 2 segundos
+    </script>
+</body>
+</html>

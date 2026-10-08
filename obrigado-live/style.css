@@ -1,0 +1,144 @@
+/* --- Reset Básico para a Página de Obrigado --- */
+body.page-obrigado {
+    background-color: #0d0d0d;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.obrigado-container {
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    padding: 40px 24px;
+    box-sizing: border-box;
+}
+
+/* --- Barra de Progresso --- */
+.progresso-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 40px;
+}
+
+.progresso-barra {
+    flex: 1;
+    height: 12px;
+    background: #2C2C2C;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.progresso-preenchimento {
+    height: 100%;
+    background: #E62E2D; /* Vermelho do tema */
+    border-radius: 20px;
+    transition: width 1s ease-in-out;
+}
+
+.progresso-texto {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #E62E2D;
+}
+
+/* --- Textos Principais --- */
+.obrigado-titulo {
+    font-family: 'Oswald', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+}
+
+.obrigado-sub {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 40px;
+}
+
+/* --- Botão Principal --- */
+.btn-grupo {
+    display: inline-block;
+    width: 100%;
+    background: #E62E2D;
+    color: #ffffff;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 48px;
+    transition: background 0.2s, transform 0.1s;
+    box-sizing: border-box;
+}
+
+.btn-grupo:hover {
+    background: #cc1f1f;
+}
+
+.btn-grupo:active {
+    transform: scale(0.98);
+}
+
+/* --- Suporte --- */
+.suporte-wrapper {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 32px;
+}
+
+.suporte-texto {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 16px;
+}
+
+.btn-suporte {
+    display: inline-block;
+    width: 100%;
+    background: transparent;
+    color: #25D366; /* Verde do WhatsApp */
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 16px;
+    border: 2px solid #25D366;
+    border-radius: 12px;
+    transition: background 0.2s, color 0.2s, transform 0.1s;
+    box-sizing: border-box;
+}
+
+.btn-suporte:hover {
+    background: #25D366;
+    color: #0d0d0d;
+}
+
+.btn-suporte:active {
+    transform: scale(0.98);
+}
+
+/* Responsivo */
+@media (max-width: 480px) {
+    .obrigado-titulo {
+        font-size: 28px;
+    }
+    .btn-grupo {
+        font-size: 18px;
+        padding: 18px;
+    }
+    .btn-suporte {
+        font-size: 16px;
+        padding: 14px;
+    }
+}

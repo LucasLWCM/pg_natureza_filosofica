@@ -1,0 +1,130 @@
+
+/* --- Dobra 4: Pago vs Gratuito --- */
+.secao-comparacao {
+    background-color: #1A1A1A; /* Cor bem escura da referência */
+    color: #FFFFFF;
+    padding: 80px 0;
+}
+
+.comparacao-container {
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.comparacao-titulo {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: clamp(64px, 15vw, 120px);
+    line-height: 0.9;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 48px;
+    letter-spacing: -0.02em;
+}
+
+.x-vermelho {
+    color: #E62E2D; /* Vermelho vivo da referência */
+}
+
+.tabela-comparacao {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.linha-tabela {
+    display: grid;
+    /* No mobile a primeira coluna precisa de um pouco mais de espaço pra caber o texto */
+    grid-template-columns: 1.3fr 1fr 1fr;
+    align-items: stretch; /* Estica as células pra terem a mesma altura */
+    gap: 8px;
+}
+
+.celula-recurso {
+    font-family: 'Arial', sans-serif; /* Fonte limpa sem serifa para a 1a coluna */
+    font-size: clamp(12px, 3.3vw, 15px);
+    font-weight: 700;
+    line-height: 1.2;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    padding-right: 4px;
+}
+
+.celula-pago, .celula-gratuito {
+    text-align: center;
+    padding: 12px 4px;
+    border-radius: 6px;
+    font-family: 'Arial', sans-serif;
+    font-size: clamp(11px, 3.2vw, 14px);
+    font-weight: 700;
+    line-height: 1.2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cabecalho-tabela {
+    margin-bottom: 8px;
+}
+
+.cabecalho-tabela .celula-pago, 
+.cabecalho-tabela .celula-gratuito {
+    background-color: transparent;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    font-size: clamp(16px, 4vw, 20px);
+    color: #FFFFFF;
+}
+
+.item-destaque {
+    background-color: #F1EAD7; /* Cor bege claro / areia */
+    color: #1A1A1A;
+}
+
+.item-escuro {
+    background-color: #262626; /* Cinza escuro */
+    color: #F1EAD7; /* O texto escuro herda a cor bege do fundo claro */
+}
+
+/* Ajustes Desktop para Dobra 4 */
+@media (min-width: 992px) {
+    .secao-comparacao {
+        padding: 120px 0;
+    }
+    
+    .comparacao-titulo {
+        margin-bottom: 80px;
+    }
+
+    .tabela-comparacao {
+        gap: 16px;
+    }
+
+    .linha-tabela {
+        grid-template-columns: 200px 1fr 1fr;
+        gap: 24px;
+    }
+    
+    .celula-recurso {
+        font-size: 16px;
+        padding-right: 24px;
+    }
+
+    .celula-pago, .celula-gratuito {
+        padding: 24px 16px;
+        border-radius: 8px;
+        font-size: 16px;
+    }
+
+    .cabecalho-tabela .celula-pago, 
+    .cabecalho-tabela .celula-gratuito {
+        font-size: 24px;
+    }
+}

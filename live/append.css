@@ -1,0 +1,121 @@
+.secao-funciona {
+    background-color: #EBEBEB; /* Cinza claro da imagem */
+    color: var(--preto);
+    padding: 64px 0;
+    overflow: hidden; /* Evita vazamento horizontal */
+}
+
+.funciona-container {
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.funciona-titulo {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: clamp(64px, 15vw, 94px); /* Tamanho bem destacado */
+    line-height: 0.85;
+    text-transform: uppercase;
+    margin-bottom: 48px;
+    letter-spacing: -0.01em;
+    color: var(--preto);
+}
+
+.funciona-linha {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 32px 0;
+}
+
+.funciona-esquerda h3 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: clamp(28px, 8vw, 32px);
+    font-weight: 400; /* Regular */
+    color: #7F746F; /* Cinza amarronzado conforme referência */
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+.funciona-direita {
+    display: flex;
+    flex-direction: column;
+    min-width: 0; /* Previne flex de estourar a tela */
+    width: 100%;
+}
+
+.tags-nichos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    max-width: 100%;
+}
+
+.nicho-tag {
+    background-color: #DFDFDF; /* Cinza dos botões */
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    font-weight: 600;
+    color: #282828;
+}
+
+.texto-mono {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    line-height: 2;
+    color: #000000;
+    font-weight: 600;
+    white-space: normal; /* Força quebra de linha no mobile */
+    word-break: break-word; /* Quebra palavras se necessário */
+    overflow-wrap: anywhere; /* Quebra em qualquer lugar se estourar */
+    max-width: 100%;
+}
+
+.ponto-quadrado {
+    display: inline-block;
+    margin: 0 8px;
+    font-size: 8px;
+    vertical-align: middle;
+}
+
+.divisor-linha {
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.1); /* Linha sutil separadora */
+    width: 100%;
+}
+
+/* Ajustes Desktop para Dobra 3 */
+@media (min-width: 992px) {
+    .secao-funciona {
+        padding: 120px 0;
+    }
+    
+    .funciona-titulo {
+        margin-bottom: 80px;
+    }
+
+    .funciona-linha {
+        display: grid;
+        grid-template-columns: 350px 1fr; /* Coluna 1 fixa, Coluna 2 ocupa o resto */
+        gap: 64px;
+        align-items: flex-start;
+        padding: 48px 0;
+    }
+
+    .funciona-esquerda {
+        width: 100%;
+    }
+
+    .funciona-direita {
+        width: 100%;
+    }
+    
+    .texto-mono {
+        max-width: 600px; /* Limita largura do texto no desktop */
+    }
+}

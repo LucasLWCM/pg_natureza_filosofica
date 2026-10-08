@@ -16,6 +16,27 @@
     <!-- CSS -->
     <link rel="stylesheet" href="../oficial/style.css">
     <link rel="stylesheet" href="style.css">
+
+    <!-- Facebook Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    
+    fbq('init', '2115550092258715');
+    fbq('init', '1566967544562221');
+    fbq('track', 'PageView');
+    </script>
+    <noscript>
+    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=2115550092258715&ev=PageView&noscript=1" />
+    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1566967544562221&ev=PageView&noscript=1" />
+    </noscript>
+    <!-- End Facebook Pixel Code -->
 </head>
 
 <body class="secao-clara">
@@ -52,7 +73,8 @@
                     </p>
 
                     <div class="cta-wrapper">
-                        <a href="#" class="btn-principal btn-lives">QUERO PARTICIPAR !</a>
+                        <a href="#" class="btn-principal btn-lives" onclick="abrirModal(); return false;">QUERO
+                            PARTICIPAR !</a>
                         <span class="de-graca">DE GRAÇA</span>
                     </div>
                 </div>
@@ -159,15 +181,22 @@
 
             <div class="funciona-linha">
                 <div class="funciona-esquerda">
-                    <h3>NOSSOS NICHOS</h3>
+                    <h3>NOSSOS TEMAS</h3>
                 </div>
                 <div class="funciona-direita">
                     <div class="tags-nichos">
-                        <span class="nicho-tag">UI Design</span>
-                        <span class="nicho-tag">Importação</span>
-                        <span class="nicho-tag">Gestão</span>
-                        <span class="nicho-tag">Design de marcas</span>
-                        <span class="nicho-tag">Prestação de serviços</span>
+                        <span class="nicho-tag">Ansiedade</span>
+                        <span class="nicho-tag">Relacionamentos</span>
+                        <span class="nicho-tag">Perdas</span>
+                        <span class="nicho-tag">Recomeço</span>
+                        <span class="nicho-tag">Propósito</span>
+                        <span class="nicho-tag">Trabalho</span>
+                        <span class="nicho-tag">Rotina</span>
+                        <span class="nicho-tag">Filosofia clássica</span>
+                        <span class="nicho-tag">Estoicismo</span>
+                        <span class="nicho-tag">Existencialismo</span>
+                        <span class="nicho-tag">Ética</span>
+                        <span class="nicho-tag">Sentido da vida</span>
                     </div>
                 </div>
             </div>
@@ -176,11 +205,13 @@
 
             <div class="funciona-linha">
                 <div class="funciona-esquerda">
-                    <h3>MENTORADOS</h3>
+                    <h3>ALUNOS</h3>
                 </div>
                 <div class="funciona-direita">
                     <p class="texto-mono">
-                        Médico ▪ Beleza ▪ Marketing ▪ Direito ▪ Cinema ▪ Youtube ▪ Produtos ▪ Concursos ▪ Espiritualidade ▪ Vendas ▪ Gastronomia ▪ Autoconhecimento ▪ Desenvolvimento pessoal ▪ Saúde mental ▪ Artesanato ▪ Desenho realista ▪ Odontologia ▪ Segurança do trabalho
+                        Aposentados ▪ Médicos ▪ Advogados ▪ Enfermeiros ▪ Professores ▪ Psicólogos ▪ Terapeutas ▪
+                        Psiquiatras ▪ Dentistas ▪ Juízes ▪ Promotores ▪ Engenheiros ▪ Arquitetos ▪ Empresários ▪
+                        Executivos ▪ Servidores públicos ▪ Fisioterapeutas ▪ Farmacêuticos ▪ Contadores ▪ Militares
                     </p>
                 </div>
             </div>
@@ -189,11 +220,11 @@
 
             <div class="funciona-linha">
                 <div class="funciona-esquerda">
-                    <h3>TICKETS</h3>
+                    <h3>IDADES</h3>
                 </div>
                 <div class="funciona-direita">
                     <p class="texto-mono">
-                        R$ 697 a R$ 70k com muitas<br>particularidades para cada ticket.
+                        Não existe idade para começar. Boa parte dos nossos alunos descobriu a filosofia depois dos 50.
                     </p>
                 </div>
             </div>
@@ -202,56 +233,56 @@
     <!-- Dobra 4: Pago vs Gratuito -->
     <section class="secao-comparacao">
         <div class="container comparacao-container">
-            <h2 class="comparacao-titulo">PAGO <span class="x-vermelho">X</span><br>GRATUITO</h2>
+            <h2 class="comparacao-titulo">FILOSOFIA <span class="x-vermelho">X</span><br>AUTOAJUDA</h2>
 
             <div class="tabela-comparacao">
                 <!-- Cabeçalho -->
                 <div class="linha-tabela cabecalho-tabela">
                     <div class="celula-recurso"></div>
-                    <div class="celula-pago">Pago</div>
-                    <div class="celula-gratuito">Gratuito</div>
+                    <div class="celula-pago">FiloQuartas</div>
+                    <div class="celula-gratuito">AutoAjuda</div>
                 </div>
 
                 <!-- Linha 1 -->
                 <div class="linha-tabela">
-                    <div class="celula-recurso">Faturar 6 dígitos<br>(ticket 2k)</div>
-                    <div class="celula-pago item-destaque">250 ingressos</div>
-                    <div class="celula-gratuito item-escuro">3,4k leads</div>
+                    <div class="celula-recurso">Base</div>
+                    <div class="celula-pago item-destaque">2.500 anos de pensamento</div>
+                    <div class="celula-gratuito item-escuro">Tendência do momento</div>
                 </div>
 
                 <!-- Linha 2 -->
                 <div class="linha-tabela">
-                    <div class="celula-recurso">Taxa de<br>conversão</div>
-                    <div class="celula-pago item-destaque">10 a 20% da base</div>
-                    <div class="celula-gratuito item-escuro">1 a 3% da base</div>
+                    <div class="celula-recurso">Linguagem</div>
+                    <div class="celula-pago item-destaque">Simples, sem jargão</div>
+                    <div class="celula-gratuito item-escuro">Frases de efeito</div>
                 </div>
 
                 <!-- Linha 3 -->
                 <div class="linha-tabela">
-                    <div class="celula-recurso">Taxa de<br>comparecimento</div>
-                    <div class="celula-pago item-destaque">50 a 80%</div>
-                    <div class="celula-gratuito item-escuro">8 a 14%</div>
+                    <div class="celula-recurso">O que <br>você leva</div>
+                    <div class="celula-pago item-destaque">Uma prática por semana</div>
+                    <div class="celula-gratuito item-escuro">Motivação que passa</div>
                 </div>
 
                 <!-- Linha 4 -->
                 <div class="linha-tabela">
-                    <div class="celula-recurso">Pessoas ao<br>vivo no pitch</div>
-                    <div class="celula-pago item-destaque">10% abaixo<br>do pico de<br>espectadores</div>
-                    <div class="celula-gratuito item-escuro">70% abaixo<br>do pico de<br>espectadores</div>
+                    <div class="celula-recurso">Perdas<br>e ansiedade</div>
+                    <div class="celula-pago item-destaque">Encara de frente</div>
+                    <div class="celula-gratuito item-escuro">“Pensa positivo”</div>
                 </div>
 
                 <!-- Linha 5 -->
                 <div class="linha-tabela">
-                    <div class="celula-recurso">Distribuição<br>de conteúdo</div>
-                    <div class="celula-pago item-destaque">Incremental</div>
-                    <div class="celula-gratuito item-escuro">Fundamental</div>
+                    <div class="celula-recurso">Seu jeito <br>de pensar</div>
+                    <div class="celula-pago item-destaque">Fica mais seu</div>
+                    <div class="celula-gratuito item-escuro">Vira o do guru</div>
                 </div>
 
                 <!-- Linha 6 -->
                 <div class="linha-tabela">
-                    <div class="celula-recurso">Audiência<br>grande</div>
-                    <div class="celula-pago item-destaque">Opcional</div>
-                    <div class="celula-gratuito item-escuro">Ideal</div>
+                    <div class="celula-recurso">Investimento</div>
+                    <div class="celula-pago item-destaque">Gratuito, toda quarta</div>
+                    <div class="celula-gratuito item-escuro">Livros, cursos, palestras</div>
                 </div>
             </div>
         </div>
@@ -268,22 +299,23 @@
                 </h2>
 
                 <div class="autoridade-historia">
-                    <p>Prazer, eu sou o Rafa. Eu era engenheiro e passei um ano inteiro sem sentir nada.</p>
-                    <p>Eu tinha o que diziam que eu precisava: bom emprego, bom salário, família presente. E acordava todo dia cansado.</p>
-                    <p>Viajei para o Ceará para descansar. Deu pior. Eu estava montando uma planilha para otimizar o meu relaxamento.</p>
-                    <p>Num restaurante à beira-mar, um surfista recebeu o prato, juntou as mãos e agradeceu. Achei bonito e resolvi imitar. Fechei os olhos e não consegui. Comecei a chorar ali, na mesa.</p>
+                    <p>Prazer, eu sou o Rafa.</p>
+                    <p>Era engenheiro, com bom salário e família presente. E acordava todo dia cansado.</p>
+                    <p>Numa viagem ao Ceará, vi um surfista agradecer pelo prato antes de comer. Tentei imitar e não
+                        consegui. Chorei ali, na mesa.</p>
 
                     <blockquote class="autoridade-citacao">
-                        Foi quando entendi: de tanto querer entender de máquina, eu tinha virado uma.
+                        Entendi: de tanto entender de máquina, eu tinha virado uma.
                     </blockquote>
 
-                    <p>Estudando filosofia, achei o nome do que acontecia comigo: <strong>vida administrada</strong>. É quando o dever, que devia ser ferramenta, vira o seu único jeito de viver. Você para de habitar a vida. Só administra ela.</p>
-                    <p>De lá para cá, levei essa filosofia para mais de 80 mil pessoas em palestras presenciais pelo Brasil. Rádios, TVs e podcasts passaram a me chamar de a nova voz da filosofia no Brasil. Todo dia de manhã eu falo com a comunidade nas Sementes Matinais.</p>
-                    <p>Construí a Escola Natureza Filosófica para o Rafa de lá de trás: aquele engenheiro que não sabia nada e teve que aprender tudo do zero.</p>
+                    <p>Na filosofia, achei o nome disso: <strong>vida administrada</strong>. Você para de viver a vida e
+                        só administra ela.</p>
+                    <p>Desde então, levei essa filosofia para mais de 80 mil pessoas em palestras pelo Brasil. Rádios,
+                        TVs e podcasts me chamam de a nova voz da filosofia no Brasil.</p>
                 </div>
 
                 <div class="autoridade-fechamento">
-                    <p class="autoridade-fechamento-linha1">Talvez... seja exatamente isso o que você precisa.</p>
+                    <p class="autoridade-fechamento-linha1">Toda quarta, às 19h30, eu te espero ao vivo.</p>
                     <p class="autoridade-fechamento-linha2">Bora nessa?</p>
                 </div>
             </div>
@@ -298,6 +330,158 @@
 
         </div>
     </section>
+
+    <!-- Modal de Inscrição -->
+    <div class="modal-overlay" id="modal-overlay" onclick="fecharModal()"></div>
+    <div class="modal-inscricao" id="modal-inscricao" role="dialog" aria-modal="true"
+        aria-label="Formulário de inscrição">
+        <button class="modal-fechar" onclick="fecharModal()" aria-label="Fechar">&times;</button>
+
+        <h3 class="modal-titulo">Inscrição gratuita</h3>
+        <p class="modal-sub">Toda quarta, às 19h30. Ao vivo, de graça.</p>
+
+        <form class="modal-form" onsubmit="enviarInscricao(event)">
+            <input type="email" id="modal-email" class="modal-input" placeholder="Email" required autocomplete="email">
+
+            <div class="modal-telefone-wrapper">
+                <div class="modal-ddi">
+                    <span class="ddi-bandeira">🇧🇷</span>
+                    <span class="ddi-codigo">+55</span>
+                </div>
+                <input type="tel" id="modal-telefone" class="modal-input modal-input-tel"
+                    placeholder="Whatsapp (11) 98765-4321" required autocomplete="tel" inputmode="numeric">
+            </div>
+
+            <button type="submit" class="modal-btn-enviar">FAZER INSCRIÇÃO</button>
+        </form>
+    </div>
+
+    <script>
+        // Máscara de telefone
+        document.getElementById('modal-telefone').addEventListener('input', function (e) {
+            var v = e.target.value.replace(/\D/g, '').substring(0, 11);
+            if (v.length >= 7) {
+                v = '(' + v.substring(0, 2) + ') ' + v.substring(2, 7) + '-' + v.substring(7);
+            } else if (v.length >= 3) {
+                v = '(' + v.substring(0, 2) + ') ' + v.substring(2);
+            } else if (v.length > 0) {
+                v = '(' + v;
+            }
+            e.target.value = v;
+        });
+
+        function abrirModal() {
+            document.getElementById('modal-overlay').classList.add('ativo');
+            document.getElementById('modal-inscricao').classList.add('ativo');
+            document.body.style.overflow = 'hidden';
+            setTimeout(function () { document.getElementById('modal-email').focus(); }, 100);
+        }
+
+        function fecharModal() {
+            document.getElementById('modal-overlay').classList.remove('ativo');
+            document.getElementById('modal-inscricao').classList.remove('ativo');
+            document.body.style.overflow = '';
+        }
+
+        // Fecha com ESC
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') fecharModal();
+        });
+
+        function obterUTMs() {
+            var params = new URLSearchParams(window.location.search);
+            return {
+                utm_source: params.get('utm_source') || '',
+                utm_medium: params.get('utm_medium') || '',
+                utm_campaign: params.get('utm_campaign') || '',
+                utm_content: params.get('utm_content') || '',
+                utm_term: params.get('utm_term') || ''
+            };
+        }
+
+        function enviarInscricao(e) {
+            e.preventDefault();
+
+            // Dispara o evento de Lead do Facebook Pixel no clique do botão
+            if(typeof fbq === 'function') {
+                fbq('track', 'Lead');
+            }
+
+            var btn = document.querySelector('.modal-btn-enviar');
+            var btnTexto = btn.innerText;
+            btn.innerText = 'ENVIANDO...';
+            btn.disabled = true;
+
+            var email = document.getElementById('modal-email').value;
+            var telBruto = document.getElementById('modal-telefone').value;
+            
+            // Remove parênteses, espaços e traços. Ex: (67) 98177-6819 -> 67981776819
+            var tel = telBruto.replace(/[\(\)\s\-]/g, '');
+            
+            var utms = obterUTMs();
+
+            var payload = {
+                nome: '',
+                email: email,
+                telefone: tel,
+                utm_source: utms.utm_source,
+                utm_medium: utms.utm_medium,
+                utm_campaign: utms.utm_campaign,
+                utm_content: utms.utm_content,
+                utm_term: utms.utm_term
+            };
+
+            var webhookUrl = 'https://webhook-rafa.draagenda.digital/webhook/livesemanal';
+            var supabaseUrl = 'https://svyfkdvuktdlfipzpbcm.supabase.co/rest/v1/webinar_leads';
+            var supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InN2eWZrZHZ1a3RkbGZpcHpwYmNtIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzQ3Mzk1NzUsImV4cCI6MjA5MDMxNTU3NX0.Q8FFm1VHAYaktUFJdpRDTGg2uNU4CHh3qnNnZTA30-E';
+
+            var reqWebhook = fetch(webhookUrl, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(payload)
+            }).catch(function (e) { console.error('Erro Webhook:', e); });
+
+            var reqSupabase = fetch(supabaseUrl, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'apikey': supabaseKey,
+                    'Authorization': 'Bearer ' + supabaseKey,
+                    'Prefer': 'resolution=merge-duplicates'
+                },
+                body: JSON.stringify(payload)
+            }).catch(function (e) { console.error('Erro Supabase:', e); });
+
+            Promise.all([reqWebhook, reqSupabase]).then(function () {
+                window.location.href = 'https://naturezafilosofica.com.br/obrigado-live';
+            });
+        }
+
+        // Lógica da barra flutuante
+        document.addEventListener("DOMContentLoaded", function() {
+            var heroBtn = document.querySelector('.hero-lives .btn-lives');
+            var barraFlutuante = document.getElementById('barra-flutuante');
+
+            if (heroBtn && barraFlutuante) {
+                var observer = new IntersectionObserver(function(entries) {
+                    if (entries[0].isIntersecting) {
+                        // Botão do hero está visível, esconde a barra
+                        barraFlutuante.classList.remove('ativa');
+                    } else {
+                        // Botão do hero saiu da tela, mostra a barra
+                        barraFlutuante.classList.add('ativa');
+                    }
+                }, { threshold: 0 });
+
+                observer.observe(heroBtn);
+            }
+        });
+    </script>
+
+    <!-- Barra Flutuante -->
+    <div class="barra-flutuante" id="barra-flutuante">
+        <a href="#" class="btn-principal btn-lives" onclick="abrirModal(); return false;">QUERO PARTICIPAR !</a>
+    </div>
 
 </body>
 
