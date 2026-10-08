@@ -19,22 +19,27 @@
 
     <!-- Facebook Pixel Code -->
     <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    
-    fbq('init', '2115550092258715');
-    fbq('init', '1566967544562221');
-    fbq('track', 'PageView');
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+
+        fbq('init', '2115550092258715');
+        fbq('init', '1566967544562221');
+        fbq('track', 'PageView');
     </script>
     <noscript>
-    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=2115550092258715&ev=PageView&noscript=1" />
-    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1566967544562221&ev=PageView&noscript=1" />
+        <img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=2115550092258715&ev=PageView&noscript=1" />
+        <img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=1566967544562221&ev=PageView&noscript=1" />
     </noscript>
     <!-- End Facebook Pixel Code -->
 </head>
@@ -55,7 +60,7 @@
                             <span>Filosofia</span>
                             <span>aplicada por:</span>
                         </div>
-                        <span class="numero-destaque">+300</span>
+                        <span class="numero-destaque">+3.000</span>
                         <div class="estatistica-col">
                             <span>alunos das séries</span>
                             <span>e curso.</span>
@@ -403,7 +408,7 @@
             e.preventDefault();
 
             // Dispara o evento de Lead do Facebook Pixel no clique do botão
-            if(typeof fbq === 'function') {
+            if (typeof fbq === 'function') {
                 fbq('track', 'Lead');
             }
 
@@ -414,10 +419,10 @@
 
             var email = document.getElementById('modal-email').value;
             var telBruto = document.getElementById('modal-telefone').value;
-            
+
             // Remove parênteses, espaços e traços. Ex: (67) 98177-6819 -> 67981776819
             var tel = telBruto.replace(/[\(\)\s\-]/g, '');
-            
+
             var utms = obterUTMs();
 
             var payload = {
@@ -458,12 +463,12 @@
         }
 
         // Lógica da barra flutuante
-        document.addEventListener("DOMContentLoaded", function() {
+        document.addEventListener("DOMContentLoaded", function () {
             var heroBtn = document.querySelector('.hero-lives .btn-lives');
             var barraFlutuante = document.getElementById('barra-flutuante');
 
             if (heroBtn && barraFlutuante) {
-                var observer = new IntersectionObserver(function(entries) {
+                var observer = new IntersectionObserver(function (entries) {
                     if (entries[0].isIntersecting) {
                         // Botão do hero está visível, esconde a barra
                         barraFlutuante.classList.remove('ativa');
