@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Obrigado! Sua compra está quase completa.</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Oswald:wght@500;600&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Oswald:wght@500;600&display=swap"
+        rel="stylesheet">
+
     <style>
         :root {
             --f-padrao: 'Inter', sans-serif;
@@ -102,7 +104,8 @@
         .progress-bar {
             background-color: var(--c-verde);
             height: 100%;
-            width: 0%; /* Inicia em 0 e anima para 95% via JS */
+            width: 0%;
+            /* Inicia em 0 e anima para 95% via JS */
             transition: width 1.5s cubic-bezier(0.22, 1, 0.36, 1);
             border-radius: 20px;
         }
@@ -181,15 +184,29 @@
         }
 
         @keyframes bounce {
-            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
-            40% { transform: translateY(-10px); }
-            60% { transform: translateY(-5px); }
+
+            0%,
+            20%,
+            50%,
+            80%,
+            100% {
+                transform: translateY(0);
+            }
+
+            40% {
+                transform: translateY(-10px);
+            }
+
+            60% {
+                transform: translateY(-5px);
+            }
         }
 
         @media (max-width: 600px) {
             .container {
                 padding: 32px 20px;
             }
+
             .btn-whatsapp {
                 font-size: 16px;
                 padding: 16px 24px;
@@ -197,12 +214,13 @@
         }
     </style>
 </head>
+
 <body>
     <div class="ruido"></div>
-    
+
     <div class="container">
         <div class="content">
-            
+
             <div class="progress-wrapper">
                 <div class="progress-text">Progresso: <span id="porcentagem">0</span>%</div>
                 <div class="progress-container">
@@ -211,7 +229,7 @@
             </div>
 
             <h1>SUA COMPRA ESTÁ QUASE COMPLETA</h1>
-            
+
             <p>Seu acesso vai chegar a qualquer momento no seu Whatsapp.</p>
 
             <div class="aviso">
@@ -221,9 +239,11 @@
 
             <div class="setas">👇👇</div>
 
-            <a href="https://chat.whatsapp.com/JhDF4lpZtchJtdouEjF0pp" class="btn-whatsapp" target="_blank" rel="noopener noreferrer">
+            <a href="https://chat.whatsapp.com/HzZpR3d87UxHRjHh8wUdx7" class="btn-whatsapp" target="_blank"
+                rel="noopener noreferrer">
                 <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12.031 21.492c-1.57-.008-3.111-.422-4.471-1.196l-4.996 1.31 1.332-4.871a9.92 9.92 0 0 1-1.34-4.994C2.565 6.273 6.814 2.034 12.28 2.04c5.467.006 9.71 4.256 9.704 9.722 0 5.468-4.254 9.722-9.953 9.73zM12.03 4.041C7.917 4.037 4.568 7.39 4.57 11.503c0 1.32.341 2.613.985 3.753l-1.042 3.81 3.896-1.021a7.925 7.925 0 0 0 3.619.876h.004c4.113.004 7.464-3.348 7.464-7.462 0-4.115-3.349-7.416-7.466-7.418zm4.07 10.428c-.224-.112-1.322-.653-1.526-.728-.204-.075-.353-.112-.5.112-.15.224-.576.728-.707.877-.13.15-.262.168-.486.056-.224-.112-.942-.347-1.796-1.111-.664-.594-1.112-1.329-1.242-1.554-.131-.225-.014-.347.098-.458.1-.1.224-.262.336-.393.112-.13.15-.224.224-.374.075-.15.037-.28-.019-.393-.056-.112-.5-1.206-.684-1.65-.18-.432-.363-.374-.5-.38l-.427-.006c-.15 0-.393.056-.598.28-.204.225-.783.766-.783 1.868 0 1.103.803 2.168.914 2.317.112.15 1.58 2.41 3.827 3.38.535.23 1.018.396 1.41.525.545.18 1.042.155 1.436.094.444-.068 1.322-.54 1.508-1.065.187-.525.187-.975.13-1.065-.056-.094-.204-.15-.428-.262z"/>
+                    <path
+                        d="M12.031 21.492c-1.57-.008-3.111-.422-4.471-1.196l-4.996 1.31 1.332-4.871a9.92 9.92 0 0 1-1.34-4.994C2.565 6.273 6.814 2.034 12.28 2.04c5.467.006 9.71 4.256 9.704 9.722 0 5.468-4.254 9.722-9.953 9.73zM12.03 4.041C7.917 4.037 4.568 7.39 4.57 11.503c0 1.32.341 2.613.985 3.753l-1.042 3.81 3.896-1.021a7.925 7.925 0 0 0 3.619.876h.004c4.113.004 7.464-3.348 7.464-7.462 0-4.115-3.349-7.416-7.466-7.418zm4.07 10.428c-.224-.112-1.322-.653-1.526-.728-.204-.075-.353-.112-.5.112-.15.224-.576.728-.707.877-.13.15-.262.168-.486.056-.224-.112-.942-.347-1.796-1.111-.664-.594-1.112-1.329-1.242-1.554-.131-.225-.014-.347.098-.458.1-.1.224-.262.336-.393.112-.13.15-.224.224-.374.075-.15.037-.28-.019-.393-.056-.112-.5-1.206-.684-1.65-.18-.432-.363-.374-.5-.38l-.427-.006c-.15 0-.393.056-.598.28-.204.225-.783.766-.783 1.868 0 1.103.803 2.168.914 2.317.112.15 1.58 2.41 3.827 3.38.535.23 1.018.396 1.41.525.545.18 1.042.155 1.436.094.444-.068 1.322-.54 1.508-1.065.187-.525.187-.975.13-1.065-.056-.094-.204-.15-.428-.262z" />
                 </svg>
                 ENTRAR NO GRUPO DE ALUNOS
             </a>
@@ -232,21 +252,21 @@
     </div>
 
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
+        document.addEventListener("DOMContentLoaded", function () {
             // Inicia animação da barra
-            setTimeout(function() {
+            setTimeout(function () {
                 const bar = document.getElementById("progressBar");
                 const text = document.getElementById("porcentagem");
-                
+
                 bar.style.width = "95%";
-                
+
                 // Anima o número de 0 a 95
                 let current = 0;
                 const target = 95;
                 const duration = 1500; // ms
                 const interval = 20; // ms
                 const step = (target / (duration / interval));
-                
+
                 const timer = setInterval(() => {
                     current += step;
                     if (current >= target) {
@@ -260,4 +280,5 @@
         });
     </script>
 </body>
+
 </html>

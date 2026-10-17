@@ -61,13 +61,18 @@ document.addEventListener('DOMContentLoaded', () => {
     // Seção de Oferta, Garantia e Fundadores (Variáveis compartilhadas)
     const TOTAL_VAGAS = 100;
     const VAGAS_PREENCHIDAS = 60;
-    const LINK_CHECKOUT = "https://checkout.thebank.com.br/7513277097880518656"; // URL de exemplo se não houver no design.md, o form já prevê
+    const LINK_CHECKOUT = "https://checkout.thebank.com.br/7517299358646747136";
     const PARCELAS = 12;
-    const VALOR_PARCELA = "59,70";
-    const PRECO_A_VISTA = "597";
+    const VALOR_PARCELA = "69,70";
+    const PRECO_A_VISTA = "697";
     const DIAS_GARANTIA = 15;
     const DIAS_GARANTIA_LEI = 15;
     const ANOS_GARANTIA_2 = "1";
+
+    window.LINK_CHECKOUT = LINK_CHECKOUT;
+    window.VALOR_PARCELA = VALOR_PARCELA;
+    window.PRECO_A_VISTA = PRECO_A_VISTA;
+    window.PARCELAS = PARCELAS;
     
     // WhatsApp
     const WHATSAPP_NUMERO = "551131970897";
