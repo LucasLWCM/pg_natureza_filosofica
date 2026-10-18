@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Seção de Oferta, Garantia e Fundadores (Variáveis compartilhadas)
     const TOTAL_VAGAS = 100;
     const VAGAS_PREENCHIDAS = 60;
-    const LINK_CHECKOUT = "https://checkout.thebank.com.br/7517299358646747136";
+    const LINK_CHECKOUT = "https://checkout.thebank.com.br/pt-BR/7517299358646747136?cc=BR";
     const PARCELAS = 12;
     const VALOR_PARCELA = "69,70";
     const PRECO_A_VISTA = "697";

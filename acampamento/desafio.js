@@ -14,7 +14,7 @@
     const TEXTO_REGRAS_BRINDES = "";
 
     // Reaproveitar constantes existentes com fallback seguro
-    const LINK_CHECKOUT = window.LINK_CHECKOUT || "https://checkout.thebank.com.br/7517299358646747136";
+    const LINK_CHECKOUT = window.LINK_CHECKOUT || "https://checkout.thebank.com.br/pt-BR/7517299358646747136?cc=BR";
     const PARCELAS = window.PARCELAS || 12;
     const VALOR_PARCELA = window.VALOR_PARCELA || "69,70";
     const PRECO_A_VISTA = window.PRECO_A_VISTA || "697";
