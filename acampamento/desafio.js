@@ -4,7 +4,7 @@
 
 (function () {
     // 1. CONSTANTES EXIGIDAS
-    const DATA_FIM_OFERTA = "2026-10-17T23:59:59-03:00";
+    const DATA_FIM_OFERTA = "2026-10-21T23:59:59-03:00";
     const ANOS_ACESSO_PADRAO = 1;
     const ANOS_ACESSO_LANCAMENTO = 2;
     const BRINDE_ACESSO_ATIVO = true;
@@ -33,7 +33,7 @@
     const secaoDesafio = document.getElementById('desafio');
     if (!secaoDesafio) return;
 
-    // 2. Configuração dos 4 Brindes
+    // 2. Configuração dos Brindes
     // Card 1: 2 anos de acesso
     const cardAcesso = document.getElementById('brinde-card-acesso');
     if (cardAcesso) {

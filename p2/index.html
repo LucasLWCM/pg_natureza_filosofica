@@ -11,7 +11,7 @@
 
     <!-- Timer Banner -->
     <div class="timer-banner" id="promo-banner">
-        O valor de lote inicial se encerra segunda-feira às 23:59 em: 
+        O valor de lote inicial se encerra quarta-feira às 23:59 em: 
         <span id="hours">00</span>h 
         <span id="minutes">00</span>m 
         <span id="seconds">00</span>s
@@ -561,7 +561,7 @@
             <h1 style="color: var(--gold-dark); font-size: 3.5rem; margin-top: 40px; margin-bottom: 10px;">12x de R$42</h1>
             <p>ou R$397 à vista</p>
             
-            <p class="mt-4" style="font-size: 1.1rem;"><strong>Essa condição especial é válida somente até segunda-feira às 23h59.</strong><br>
+            <p class="mt-4" style="font-size: 1.1rem;"><strong>Essa condição especial é válida somente até quarta-feira às 23h59.</strong><br>
             Depois desse prazo, o valor subirá para R$ 997.</p>
 
             <div class="btn-cta-wrapper">
@@ -579,10 +579,13 @@
     <script>
         function updateTimer() {
             const now = new Date();
-            let daysToMonday = (1 - now.getDay() + 7) % 7;
-            if (daysToMonday === 0) daysToMonday = 7;
-            const endOfDay = new Date(now.getFullYear(), now.getMonth(), now.getDate() + daysToMonday, 23, 59, 59, 999);
-            const diff = endOfDay - now;
+            let target = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 23, 59, 59, 999);
+            let daysToAdd = (3 - now.getDay() + 7) % 7;
+            if (daysToAdd === 0 && now.getTime() > target.getTime()) {
+                daysToAdd = 7;
+            }
+            target.setDate(now.getDate() + daysToAdd);
+            const diff = target - now;
 
             if (diff <= 0) {
                 document.getElementById('promo-banner').innerHTML = 'O lote inicial foi encerrado.';
