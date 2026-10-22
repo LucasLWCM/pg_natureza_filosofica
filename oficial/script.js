@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const VAGAS_PREENCHIDAS = 60;
     const LINK_CHECKOUT = "https://checkout.thebank.com.br/pt-BR/7517299358646747136?cc=BR";
     const PARCELAS = 12;
-    const VALOR_PARCELA = "69,70";
+    const VALOR_PARCELA = "67";
     const PRECO_A_VISTA = "697";
     const DIAS_GARANTIA = 15;
     const DIAS_GARANTIA_LEI = 15;
