@@ -1,19 +1,18 @@
 /* ==========================================================================
-   10B. SEÇÃO DESAFIO DE LANÇAMENTO
-   Cores, fontes e componentes rigorosamente baseados no design.md
+   10B. SEÇÃO DESAFIO: SUAS MEDITAÇÕES EM 30 DIAS
    ========================================================================== */
 
 .desafio-sec {
   background-color: #F5F1E8;
   position: relative;
   box-sizing: border-box;
-  padding: 56px 16px 96px;
+  padding: 56px 16px 80px;
   overflow: hidden;
 }
 
 @media (min-width: 1024px) {
   .desafio-sec {
-    padding: 72px clamp(24px, 10vw, 200px) 120px;
+    padding: 72px clamp(24px, 8vw, 160px) 100px;
   }
 }
 
@@ -26,23 +25,24 @@
   box-sizing: border-box;
 }
 
-/* Card Principal (o conteúdo todo vive dentro dele) */
+/* Card Principal */
 .desafio-card-principal {
   background-color: #191310;
   border: 1px solid #E87524;
   border-radius: 32px;
-  box-shadow: none;
-  padding: 24px;
+  padding: 36px 20px;
   width: 100%;
+  max-width: 860px;
+  margin: 0 auto;
   box-sizing: border-box;
   position: relative;
   overflow: hidden;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .desafio-card-principal {
     border-radius: 40px;
-    padding: 48px;
+    padding: 56px 48px;
   }
 }
 
@@ -59,29 +59,10 @@
   position: relative;
   z-index: 1;
   width: 100%;
-}
-
-/* Layout Linha 1: Mobile First (coluna única) */
-.desafio-linha-1 {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-
-.desafio-col-esq {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  width: 100%;
-}
-
-.desafio-col-dir {
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  text-align: left;
-  width: 100%;
 }
 
 /* 1. Pílula */
@@ -99,120 +80,81 @@
   font-size: 14px;
   color: #F5F1E8;
   margin-bottom: 20px;
-  box-sizing: border-box;
-}
-
-.desafio-pilula svg {
-  flex-shrink: 0;
 }
 
 /* 2. Título (h2) */
 .desafio-titulo {
   font-family: 'Oswald', sans-serif;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 32px;
-  line-height: 1.1;
+  line-height: 1.15;
   color: #F5F1E8;
-  text-wrap: balance;
-  text-align: center;
-  margin: 0 0 20px 0;
+  text-transform: uppercase;
+  margin: 0 0 16px 0;
+  max-width: 24ch;
+}
+
+@media (min-width: 768px) {
+  .desafio-titulo {
+    font-size: 44px;
+  }
 }
 
 .desafio-titulo em {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Playfair Display', serif;
   font-style: italic;
-  font-weight: 600;
+  font-weight: 400;
+  text-transform: none;
   color: #E87524;
 }
 
-/* 3. Texto */
+/* 3. Texto Descritivo */
 .desafio-desc {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
-  font-size: 17px;
+  font-size: 16px;
   line-height: 1.6;
-  color: rgba(245, 241, 232, 0.78);
-  max-width: 36ch;
-  text-align: center;
-  margin: 0 auto 28px auto;
+  color: rgba(245, 241, 232, 0.85);
+  margin: 0 0 32px 0;
+  max-width: 58ch;
 }
 
-/* 4. Timer */
-.desafio-timer-bloco {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 28px;
-  width: 100%;
+@media (min-width: 768px) {
+  .desafio-desc {
+    font-size: 18px;
+  }
 }
 
-.desafio-timer-boxes {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-}
-
-.desafio-timer-box {
-  background-color: #080808;
-  border: 1px solid rgba(245, 241, 232, 0.12);
-  border-radius: 14px;
-  width: 72px;
-  padding: 12px 0;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  box-sizing: border-box;
-}
-
-.desafio-timer-num {
-  font-family: 'Oswald', sans-serif;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 1;
-  color: #E87524;
-  font-variant-numeric: tabular-nums;
-  display: block;
-}
-
-.desafio-timer-rotulo {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 500;
-  font-size: 12px;
-  color: rgba(245, 241, 232, 0.72);
-  margin-top: 4px;
-  display: block;
-}
-
-.desafio-timer-fim-texto {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 500;
-  font-size: 15px;
-  color: rgba(245, 241, 232, 0.72);
-  margin-top: 12px;
-  text-align: center;
-}
-
-/* 5. Card do Desafio */
+/* 4. Card do Desafio */
 .desafio-card-box {
   background-color: rgba(245, 241, 232, 0.06);
   border: 1px solid rgba(245, 241, 232, 0.12);
   border-radius: 24px;
-  padding: 24px;
+  padding: 28px 20px;
   text-align: left;
   width: 100%;
   box-sizing: border-box;
-  margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  .desafio-card-box {
+    padding: 36px 36px;
+  }
 }
 
 .desafio-card-box-titulo {
   font-family: 'Oswald', sans-serif;
   font-weight: 600;
   font-size: 24px;
-  line-height: 1.15;
+  line-height: 1.2;
   color: #F5F1E8;
   margin: 0;
+}
+
+@media (min-width: 768px) {
+  .desafio-card-box-titulo {
+    font-size: 28px;
+  }
 }
 
 .desafio-card-box-sub {
@@ -226,10 +168,17 @@
 .desafio-card-box-lista {
   list-style: none;
   padding: 0;
-  margin: 18px 0 0 0;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
+  margin: 24px 0 0 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+@media (min-width: 768px) {
+  .desafio-card-box-lista {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 24px;
+  }
 }
 
 .desafio-card-box-item {
@@ -240,148 +189,39 @@
 
 .desafio-card-box-item svg {
   flex-shrink: 0;
-  width: 26px;
-  height: 26px;
-  margin-top: 1px;
+  width: 24px;
+  height: 24px;
+  margin-top: 2px;
 }
 
 .desafio-card-box-item span {
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 15px;
   color: #F5F1E8;
   line-height: 1.45;
 }
 
-/* 6. Título dos Brindes */
-.desafio-brindes-titulo {
-  font-family: 'Oswald', sans-serif;
-  font-weight: 600;
-  font-size: 26px;
-  line-height: 1.15;
-  color: #F5F1E8;
-  text-align: center;
-  margin: 32px 0 16px 0;
+@media (min-width: 768px) {
+  .desafio-card-box-item span {
+    font-size: 16px;
+  }
 }
 
-/* 7. Cards de Brinde */
-.desafio-brindes-lista {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-  width: 100%;
-  transition: gap 0.2s ease;
-}
-
-.desafio-brinde-card {
-  background-color: #080808;
-  border: 1px solid rgba(245, 241, 232, 0.12);
-  border-radius: 20px;
-  padding: 20px;
-  text-align: left;
-  box-sizing: border-box;
-  width: 100%;
-  transition: padding 0.2s ease;
-}
-
-.desafio-brinde-topo {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 12px;
-}
-
-.desafio-brinde-icone {
-  width: 30px;
-  height: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-}
-
-.desafio-brinde-icone svg {
-  width: 30px;
-  height: 30px;
-}
-
-.desafio-brinde-tag {
-  background-color: #E87524;
-  color: #080808;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  font-size: 12px;
-  padding: 5px 12px;
-  border-radius: 999px;
-  line-height: 1.2;
-  white-space: nowrap;
-}
-
-.desafio-brinde-img-wrap {
-  margin-top: 16px;
-  border-radius: 14px;
-  overflow: hidden;
-  background-color: #E87524;
-  aspect-ratio: 16 / 9;
-  width: 100%;
-}
-
-.desafio-brinde-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-.desafio-brinde-h4 {
-  font-family: 'Oswald', sans-serif;
-  font-weight: 600;
-  font-size: 22px;
-  line-height: 1.15;
-  color: #F5F1E8;
-  margin: 16px 0 0 0;
-}
-
-.desafio-brinde-desc {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 1.5;
-  color: rgba(245, 241, 232, 0.78);
-  margin: 8px 0 0 0;
-}
-
-/* Linha 2: CTA */
-.desafio-linha-2 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 32px;
-  width: 100%;
-}
-
-.desafio-col-esq-cta {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-.desafio-col-dir-cta {
+/* 5. CTA Bloco */
+.desafio-cta-bloco {
+  margin-top: 36px;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
 }
 
-/* 8. Botão Principal */
 .desafio-btn {
-  margin-top: 0 !important;
   width: 100%;
-  height: 64px;
+  max-width: 440px;
+  height: 68px;
+  margin-top: 0 !important;
 }
 
 .desafio-btn:focus-visible {
@@ -389,7 +229,6 @@
   outline-offset: 3px;
 }
 
-/* 9. Microtexto */
 .desafio-microtexto {
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
@@ -404,147 +243,7 @@
   margin: 0 4px;
 }
 
-/* 10. Letra Pequena */
-.desafio-letra-pequena {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
-  font-size: 13px;
-  line-height: 1.5;
-  color: rgba(245, 241, 232, 0.6);
-  margin: 16px 0 0 0;
-  text-align: center;
-}
-
-/* ==========================================================================
-   DESKTOP (1024px ou mais): Alinhado à esquerda, duas colunas
-   ========================================================================== */
-@media (min-width: 1024px) {
-  .desafio-linha-1 {
-    display: grid;
-    grid-template-columns: minmax(0, 6fr) minmax(0, 5fr);
-    column-gap: 64px;
-    align-items: start;
-  }
-
-  .desafio-col-esq {
-    align-items: flex-start;
-    text-align: left;
-  }
-
-  .desafio-col-dir {
-    align-items: stretch;
-    text-align: left;
-  }
-
-  .desafio-pilula {
-    margin: 0 0 20px 0;
-  }
-
-  .desafio-titulo {
-    font-size: 52px;
-    text-align: left;
-  }
-
-  .desafio-desc {
-    font-size: 19px;
-    max-width: 46ch;
-    text-align: left;
-    margin: 0 0 28px 0;
-  }
-
-  .desafio-timer-bloco {
-    align-items: flex-start;
-  }
-
-  .desafio-timer-boxes {
-    justify-content: flex-start;
-  }
-
-  .desafio-timer-box {
-    width: 88px;
-  }
-
-  .desafio-timer-num {
-    font-size: 52px;
-  }
-
-  .desafio-timer-fim-texto {
-    text-align: left;
-  }
-
-  .desafio-card-box-titulo {
-    font-size: 28px;
-  }
-
-  .desafio-card-box-item span {
-    font-size: 17px;
-  }
-
-  .desafio-brindes-titulo {
-    font-size: 30px;
-    text-align: left;
-    margin: 0 0 16px 0;
-  }
-
-  .desafio-brinde-h4 {
-    font-size: 24px;
-  }
-
-  .desafio-brinde-desc {
-    font-size: 16px;
-  }
-
-  /* Aspect-ratio 21/9 no desktop para os cards com imagem (economizar altura) */
-  .desafio-brinde-img-wrap {
-    aspect-ratio: 21 / 9;
-  }
-
-  /* Redução de gap e padding se a coluna direita ultrapassar a esquerda em > 120px */
-  .desafio-brindes-lista.desafio-brindes-compacto {
-    gap: 12px;
-  }
-
-  .desafio-brindes-lista.desafio-brindes-compacto .desafio-brinde-card {
-    padding: 18px;
-  }
-
-  .desafio-linha-2 {
-    display: grid;
-    grid-template-columns: minmax(0, 6fr) minmax(0, 5fr);
-    column-gap: 64px;
-    align-items: center;
-    margin-top: 40px;
-    border-top: 1px solid rgba(245, 241, 232, 0.12);
-    padding-top: 32px;
-  }
-
-  .desafio-col-esq-cta {
-    justify-content: flex-start;
-  }
-
-  .desafio-btn {
-    height: 72px;
-    max-width: 440px;
-  }
-
-  .desafio-col-dir-cta {
-    align-items: flex-start;
-    text-align: left;
-  }
-
-  .desafio-microtexto {
-    text-align: left;
-    margin-top: 0;
-  }
-
-  .desafio-letra-pequena {
-    text-align: left;
-  }
-}
-
-/* ==========================================================================
-   ANIMAÇÃO DE ENTRADA (vazio, borrado, nítido)
-   ========================================================================== */
+/* Animações */
 @keyframes animDesafioEntrada {
   0% {
     opacity: 0;
@@ -571,7 +270,7 @@
 }
 
 .anim-desafio.in-view {
-  animation: animDesafioEntrada 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+  animation: animDesafioEntrada 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
   animation-delay: var(--anim-delay, 0ms);
 }
 
@@ -583,26 +282,13 @@
 }
 
 .anim-desafio-item.in-view {
-  animation: animDesafioEntrada 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
-  animation-delay: var(--anim-delay, 0ms);
-}
-
-.anim-desafio-avulso {
-  opacity: 0;
-  filter: blur(14px);
-  transform: translateY(30px);
-  will-change: opacity, filter, transform;
-}
-
-.anim-desafio-avulso.in-view {
-  animation: animDesafioEntrada 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+  animation: animDesafioEntrada 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
   animation-delay: var(--anim-delay, 0ms);
 }
 
 @media (prefers-reduced-motion: reduce) {
   .anim-desafio,
-  .anim-desafio-item,
-  .anim-desafio-avulso {
+  .anim-desafio-item {
     opacity: 1 !important;
     filter: none !important;
     transform: none !important;

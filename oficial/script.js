@@ -60,13 +60,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Seção de Oferta, Garantia e Fundadores (Variáveis compartilhadas)
     const TOTAL_VAGAS = 100;
-    const VAGAS_PREENCHIDAS = 60;
+    const VAGAS_PREENCHIDAS = 85;
     const LINK_CHECKOUT = "https://checkout.thebank.com.br/pt-BR/7517299358646747136?cc=BR";
     const PARCELAS = 12;
     const VALOR_PARCELA = "67";
     const PRECO_A_VISTA = "697";
-    const DIAS_GARANTIA = 15;
-    const DIAS_GARANTIA_LEI = 15;
+    const DIAS_GARANTIA = 30;
+    const DIAS_GARANTIA_LEI = 30;
     const ANOS_GARANTIA_2 = "1";
 
     window.LINK_CHECKOUT = LINK_CHECKOUT;
@@ -238,5 +238,20 @@ document.addEventListener('DOMContentLoaded', () => {
         if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
             startAutoplay();
         }
+    }
+
+    // Observer para animar o card do Desafio
+    const cardDesafio = document.querySelector('.desafio-card-principal');
+    if (cardDesafio) {
+        const desafioObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('in-view');
+                    entry.target.querySelectorAll('.anim-desafio-item').forEach(item => item.classList.add('in-view'));
+                    desafioObserver.unobserve(entry.target);
+                }
+            });
+        }, { rootMargin: '0px 0px -10% 0px' });
+        desafioObserver.observe(cardDesafio);
     }
 });

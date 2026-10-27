@@ -78,7 +78,7 @@
           "name": "E se eu entrar e não for para mim?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Você tem duas garantias. A primeira é de 15 dias: entre, participe dos encontros e, se não gostar, peça o reembolso, sem precisar justificar nada. A segunda é de 1 ano: se você assistir a todo o conteúdo e participar de todas as aulas ao vivo e, mesmo assim, sentir que não agregou nada na sua vida, eu devolvo cada centavo."
+            "text": "Você tem duas garantias. A primeira é de 30 dias: entre, participe dos encontros e, se não gostar, peça o reembolso, sem precisar justificar nada. A segunda é de 1 ano: se você assistir a todo o conteúdo e participar de todas as aulas ao vivo e, mesmo assim, sentir que não agregou nada na sua vida, eu devolvo cada centavo."
           }
         },
         {
@@ -930,209 +930,99 @@
             <div class="desafio-card-principal anim-desafio" style="--anim-delay: 0ms;">
                 <div class="ruido" style="opacity: 0.06;"></div>
                 <div class="desafio-card-conteudo">
-                    <!-- Linha 1: Grid no desktop (Esquerda: Desafio / Direita: Brindes) -->
-                    <div class="desafio-linha-1">
-                        <!-- Coluna Esquerda: Pílula, Título, Texto, Timer, Card do Desafio -->
-                        <div class="desafio-col-esq">
-                            <!-- 1. Pílula -->
-                            <div class="desafio-pilula anim-desafio-item" style="--anim-delay: 0ms;">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
-                                    fill="none" stroke="#E87524" stroke-width="1.5" stroke-linecap="round"
-                                    stroke-linejoin="round" aria-hidden="true">
-                                    <line x1="10" x2="14" y1="2" y2="2"></line>
-                                    <line x1="12" x2="15" y1="14" y2="11"></line>
-                                    <circle cx="12" cy="14" r="8"></circle>
-                                </svg>
-                                <span>Só para quem entra hoje</span>
-                            </div>
-
-                            <!-- 2. Título (h2) -->
-                            <h2 class="desafio-titulo anim-desafio-item" style="--anim-delay: 150ms;">
-                                Escreva o seu próprio <em>livro de meditações</em> em 30 dias
-                            </h2>
-
-                            <!-- 3. Texto -->
-                            <p class="desafio-desc anim-desafio-item" style="--anim-delay: 300ms;">
-                                Marco Aurélio escreveu as Meditações para si mesmo, um dia de cada vez. Em 30 dias, você
-                                faz o mesmo com a sua vida: um áudio por dia, uma prática curta e, no final, o seu
-                                livro.
-                            </p>
-
-                            <!-- 4. Timer -->
-                            <div class="desafio-timer-bloco anim-desafio-item" style="--anim-delay: 450ms;" role="timer"
-                                aria-live="off" aria-label="Tempo restante da oferta de lançamento">
-                                <div class="desafio-timer-boxes">
-                                    <div class="desafio-timer-box">
-                                        <span class="desafio-timer-num" id="timer-horas">00</span>
-                                        <span class="desafio-timer-rotulo">horas</span>
-                                    </div>
-                                    <div class="desafio-timer-box">
-                                        <span class="desafio-timer-num" id="timer-minutos">00</span>
-                                        <span class="desafio-timer-rotulo">min</span>
-                                    </div>
-                                    <div class="desafio-timer-box">
-                                        <span class="desafio-timer-num" id="timer-segundos">00</span>
-                                        <span class="desafio-timer-rotulo">seg</span>
-                                    </div>
-                                </div>
-                                <div class="desafio-timer-fim-texto">
-                                    Termina quarta-feira às <span class="desafio-horario-fim"></span>
-                                </div>
-                            </div>
-
-                            <!-- 5. Card do Desafio -->
-                            <div class="desafio-card-box anim-desafio-item" style="--anim-delay: 600ms;">
-                                <h3 class="desafio-card-box-titulo">Desafio: Suas Meditações em 30 dias</h3>
-                                <p class="desafio-card-box-sub">Incluído para quem entrar na escola hoje.</p>
-                                <ul class="desafio-card-box-lista">
-                                    <li class="desafio-card-box-item">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26"
-                                            viewBox="0 0 24 24" fill="none" stroke="#E87524" stroke-width="1.5"
-                                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                            <path
-                                                d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z">
-                                            </path>
-                                            <path d="m9 12 2 2 4-4"></path>
-                                        </svg>
-                                        <span>Um áudio por dia guiando cada etapa</span>
-                                    </li>
-                                    <li class="desafio-card-box-item">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26"
-                                            viewBox="0 0 24 24" fill="none" stroke="#E87524" stroke-width="1.5"
-                                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                            <path
-                                                d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z">
-                                            </path>
-                                            <path d="m9 12 2 2 4-4"></path>
-                                        </svg>
-                                        <span>Baseado nos textos de Marco Aurélio, sem nada inventado</span>
-                                    </li>
-                                    <li class="desafio-card-box-item">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26"
-                                            viewBox="0 0 24 24" fill="none" stroke="#E87524" stroke-width="1.5"
-                                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                            <path
-                                                d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z">
-                                            </path>
-                                            <path d="m9 12 2 2 4-4"></path>
-                                        </svg>
-                                        <span>Uma prática curta, para caber na sua rotina</span>
-                                    </li>
-                                    <li class="desafio-card-box-item">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26"
-                                            viewBox="0 0 24 24" fill="none" stroke="#E87524" stroke-width="1.5"
-                                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                            <path
-                                                d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z">
-                                            </path>
-                                            <path d="m9 12 2 2 4-4"></path>
-                                        </svg>
-                                        <span>No fim, o seu livro de meditações escrito por você</span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <!-- Coluna Direita: Título dos Brindes e os 3 Cards de Brinde -->
-                        <div class="desafio-col-dir">
-                            <!-- 6. Título dos Brindes (h3) -->
-                            <h3 class="desafio-brindes-titulo anim-desafio-avulso" style="--anim-delay: 0ms;">
-                                E quem entra hoje ainda leva
-                            </h3>
-
-                            <!-- 7. Quatro Cards de Brinde -->
-                            <ul class="desafio-brindes-lista">
-                                <!-- Card 1: 2 anos de acesso -->
-                                <li class="desafio-brinde-card anim-desafio-avulso" id="brinde-card-acesso" style="--anim-delay: 80ms;">
-                                    <div class="desafio-brinde-topo">
-                                        <div class="desafio-brinde-icone">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#E87524" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                                <path d="M8 2v4"></path>
-                                                <path d="M16 2v4"></path>
-                                                <rect width="18" height="18" x="3" y="4" rx="2"></rect>
-                                                <path d="M3 10h18"></path>
-                                                <path d="M10 16h4"></path>
-                                                <path d="M12 14v4"></path>
-                                            </svg>
-                                        </div>
-                                        <span class="desafio-brinde-tag">Para todo mundo que entrar hoje</span>
-                                    </div>
-                                    <h4 class="desafio-brinde-h4"><span class="var-anos-lancamento">2</span> anos de acesso, em vez de <span class="var-anos-padrao">1</span></h4>
-                                    <p class="desafio-brinde-desc">
-                                        Você fica com acesso a todo o conteúdo da escola pelo dobro do tempo, sem pagar nada a mais.
-                                    </p>
-                                </li>
-
-                                <!-- Card 2: Box estoico -->
-                                <li class="desafio-brinde-card anim-desafio-avulso" id="brinde-card-box" style="--anim-delay: 160ms;">
-                                    <div class="desafio-brinde-topo">
-                                        <div class="desafio-brinde-icone">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#E87524" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                                <path d="m7.5 4.27 9 5.15"></path>
-                                                <path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"></path>
-                                                <path d="m3.3 7 8.7 5 8.7-5"></path>
-                                                <path d="M12 22V12"></path>
-                                            </svg>
-                                        </div>
-                                        <span class="desafio-brinde-tag">Para os 5 primeiros</span>
-                                    </div>
-                                    <div class="desafio-brinde-img-wrap">
-                                        <img src="assets/brinde_box.jpg" alt="Box de filosofia estoica" class="desafio-brinde-img" loading="lazy" onerror="this.closest('.desafio-brinde-img-wrap').style.display='none';">
-                                    </div>
-                                    <h4 class="desafio-brinde-h4">Box de filosofia estoica</h4>
-                                    <p class="desafio-brinde-desc">Box Biblioteca Estoica, Grandes Mestres Vol. I: 4 livros físicos em casa</p>
-                                </li>
-
-                                <!-- Card 3: Livro do Rafa -->
-                                <li class="desafio-brinde-card anim-desafio-avulso" id="brinde-card-livro" style="--anim-delay: 240ms;">
-                                    <div class="desafio-brinde-topo">
-                                        <div class="desafio-brinde-icone">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#E87524" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
-                                                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
-                                            </svg>
-                                        </div>
-                                        <span class="desafio-brinde-tag">Só 1 exemplar</span>
-                                    </div>
-                                    <div class="desafio-brinde-img-wrap">
-                                        <img src="assets/brinde_livro.jpg" alt="O livro Meditações do Rafa" class="desafio-brinde-img" loading="lazy" onerror="this.closest('.desafio-brinde-img-wrap').style.display='none';">
-                                    </div>
-                                    <h4 class="desafio-brinde-h4">O livro Meditações do Rafa</h4>
-                                    <p class="desafio-brinde-desc">
-                                        O exemplar que o Rafa usou, cheio de anotações dele. Existe um só, e vai para a primeira pessoa a entrar.
-                                    </p>
-                                </li>
-                            </ul>
-                        </div>
+                    <!-- 1. Pílula -->
+                    <div class="desafio-pilula anim-desafio-item" style="--anim-delay: 0ms;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                            fill="none" stroke="#E87524" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" aria-hidden="true">
+                            <line x1="10" x2="14" y1="2" y2="2"></line>
+                            <line x1="12" x2="15" y1="14" y2="11"></line>
+                            <circle cx="12" cy="14" r="8"></circle>
+                        </svg>
+                        <span>Só para quem entra hoje</span>
                     </div>
 
-                    <!-- Linha 2: CTA (Botão, Microtexto, Letra Pequena) -->
-                    <div class="desafio-linha-2 anim-desafio-item" style="--anim-delay: 600ms;">
-                        <div class="desafio-col-esq-cta">
-                            <!-- 8. Botão Principal -->
-                            <a href="https://checkout.thebank.com.br/pt-BR/7517299358646747136?cc=BR"
-                                class="btn-principal desafio-btn var-link-checkout" aria-label="Quero entrar hoje">
-                                <span>Quero entrar hoje</span>
-                                <span class="btn-icon">
-                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                        <line x1="5" y1="12" x2="19" y2="12"></line>
-                                        <polyline points="12 5 19 12 12 19"></polyline>
-                                    </svg>
-                                </span>
-                            </a>
-                        </div>
-                        <div class="desafio-col-dir-cta">
-                            <!-- 9. Microtexto -->
-                            <p class="desafio-microtexto">
-                                Termina quarta-feira às <span class="desafio-horario-fim"></span><span
-                                    class="desafio-divisor-pipe">|</span><span class="desafio-var-parcelas">12</span>x
-                                de R$<span class="desafio-var-valor-parcela">67</span><span
-                                    class="desafio-divisor-pipe">|</span>Garantia dupla
-                            </p>
-                            <!-- 10. Letra Pequena -->
-                            <p class="desafio-letra-pequena" id="desafio-regras-brindes"></p>
-                        </div>
+                    <!-- 2. Título (h2) -->
+                    <h2 class="desafio-titulo anim-desafio-item" style="--anim-delay: 150ms;">
+                        Escreva o seu próprio <em>livro de meditações</em> em 30 dias
+                    </h2>
+
+                    <!-- 3. Texto -->
+                    <p class="desafio-desc anim-desafio-item" style="--anim-delay: 300ms;">
+                        Marco Aurélio escreveu as Meditações para si mesmo, um dia de cada vez. Em 30 dias, você
+                        faz o mesmo com a sua vida: um áudio por dia, uma prática curta e, no final, o seu
+                        livro.
+                    </p>
+
+                    <!-- 4. Card do Desafio -->
+                    <div class="desafio-card-box anim-desafio-item" style="--anim-delay: 450ms;">
+                        <h3 class="desafio-card-box-titulo">Desafio: Suas Meditações em 30 dias</h3>
+                        <p class="desafio-card-box-sub">Incluído para quem entrar na escola hoje.</p>
+                        <ul class="desafio-card-box-lista">
+                            <li class="desafio-card-box-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26"
+                                    viewBox="0 0 24 24" fill="none" stroke="#E87524" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path
+                                        d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z">
+                                    </path>
+                                    <path d="m9 12 2 2 4-4"></path>
+                                </svg>
+                                <span>Um áudio por dia guiando cada etapa</span>
+                            </li>
+                            <li class="desafio-card-box-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26"
+                                    viewBox="0 0 24 24" fill="none" stroke="#E87524" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path
+                                        d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z">
+                                    </path>
+                                    <path d="m9 12 2 2 4-4"></path>
+                                </svg>
+                                <span>Baseado nos textos de Marco Aurélio, sem nada inventado</span>
+                            </li>
+                            <li class="desafio-card-box-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26"
+                                    viewBox="0 0 24 24" fill="none" stroke="#E87524" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path
+                                        d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z">
+                                    </path>
+                                    <path d="m9 12 2 2 4-4"></path>
+                                </svg>
+                                <span>Uma prática curta, para caber na sua rotina</span>
+                            </li>
+                            <li class="desafio-card-box-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26"
+                                    viewBox="0 0 24 24" fill="none" stroke="#E87524" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path
+                                        d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z">
+                                    </path>
+                                    <path d="m9 12 2 2 4-4"></path>
+                                </svg>
+                                <span>No fim, o seu livro de meditações escrito por você</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- 5. CTA Bloco -->
+                    <div class="desafio-cta-bloco anim-desafio-item" style="--anim-delay: 600ms;">
+                        <a href="https://checkout.thebank.com.br/pt-BR/7517299358646747136?cc=BR"
+                            class="btn-principal desafio-btn var-link-checkout" aria-label="Quero entrar hoje">
+                            <span>Quero entrar hoje</span>
+                            <span class="btn-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </span>
+                        </a>
+                        <p class="desafio-microtexto">
+                            <span class="var-parcelas">12</span>x de R$<span class="var-valor-parcela">67</span><span
+                                class="desafio-divisor-pipe">|</span>Garantia dupla
+                        </p>
                     </div>
                 </div>
             </div>
@@ -1309,14 +1199,14 @@
                 <!-- Coluna Esquerda: Texto -->
                 <div class="garantia-texto-esq">
                     <p class="garantia-numero-bloco anim-garantia">
-                        <span class="garantia-numero var-dias-garantia">15</span>
+                        <span class="garantia-numero var-dias-garantia">30</span>
                         <span class="garantia-dias-texto">dias de garantia</span>
                     </p>
                     <h2 class="garantia-h2 anim-garantia">
                         O risco <em>não é seu</em>
                     </h2>
                     <p class="garantia-abertura anim-garantia">
-                        Você pode acessar a escola durante <span class="var-dias-garantia">15</span> dias. Se não
+                        Você pode acessar a escola durante <span class="var-dias-garantia">30</span> dias. Se não
                         gostar, peça o
                         reembolso e eu devolvo o seu dinheiro. A nossa taxa de reembolso é menor que 1%.
                     </p>
@@ -1335,10 +1225,10 @@
                                     d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2-1 4-2 7-2 2.15 0 4.2.91 6.3 1.94a.9.9 0 0 1 .7.85Z" />
                                 <path d="m9 12 2 2 4-4" />
                             </svg>
-                            <span class="garantia-tag tag-lei">Até o <span class="var-dias-garantia-lei">15</span>º
+                            <span class="garantia-tag tag-lei">Até o <span class="var-dias-garantia-lei">30</span>º
                                 dia</span>
                         </div>
-                        <h3>Garantia Incondicional: <span class="var-dias-garantia-lei">15</span> dias, sem pergunta
+                        <h3>Garantia Incondicional: <span class="var-dias-garantia-lei">30</span> dias, sem pergunta
                             nenhuma</h3>
                         <p>Entrou, não gostou, pediu de volta. Sem precisar justificar nada.</p>
                     </div>
@@ -1530,7 +1420,7 @@
                     </button>
                     <div class="faq-panel-wrapper">
                         <div class="faq-panel" id="faq-painel-7" role="region" aria-labelledby="faq-btn-7">
-                            <p>Você tem duas garantias. A primeira é de <span class="var-dias-garantia">15</span> dias:
+                            <p>Você tem duas garantias. A primeira é de <span class="var-dias-garantia">30</span> dias:
                                 entre, participe dos encontros e, se não gostar, peça o reembolso, sem precisar
                                 justificar nada. A segunda é de <span class="var-anos-garantia-2">1</span> ano: se você
                                 assistir a todo o conteúdo e participar de todas as aulas ao vivo e, mesmo assim, sentir
@@ -1607,7 +1497,7 @@
             <p class="final-microtexto anim-final" style="--anim-delay: 7.42;">
                 <span class="var-parcelas">12</span>x de R$<span class="var-valor-parcela">67</span> <span
                     class="final-sep">|</span> Garantia dupla <span class="final-sep">|</span> Restam <span
-                    class="var-vagas-restantes">40</span> vagas de fundador
+                    class="var-vagas-restantes">15</span> vagas de fundador
             </p>
 
             <!-- Card do WhatsApp -->
@@ -1651,7 +1541,6 @@
     </section>
 
     <script src="../oficial/script.js"></script>
-    <script src="desafio.js"></script>
 </body>
 
 </html>
